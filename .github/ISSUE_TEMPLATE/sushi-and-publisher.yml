@@ -1,0 +1,21 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true
+      - name: Build Implementation Guide
+        run: |
+          docker run \
+            -v $(pwd):/home/publisher/ig \
+            hl7fhir/ig-publisher-base \
+            sh -c "sushi && ./scripts/_updatePublisher.sh --yes && ./scripts/_genonce.sh"

@@ -1,0 +1,14 @@
+/* Product families should override the following colors with family-specific colors */
+:root {
+  --navbar-bg-color: #505050; /* 2. Header container color */
+  --footer-bg-color: #707070; /* 3. Footer background color*/
+  --footer-container-bg-color: #505050; /* 4. Footer container color */
+  --btn-hover-color: #808080;  /* 6. Menu button hover color */
+}
+  
+  /* Generic settings common to all HL7 IGs */
+:root {
+  --stripe-bg-color: #999999; /* 5. Header strip color */
+  --btn-active-color: #da0c23; /* 7. Menu button active color */
+  --btn-text-color: #e6e6e6; /* 8. Menu button text color */
+}

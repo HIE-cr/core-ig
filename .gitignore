@@ -1,6 +1,5 @@
-CRCore/template
-CRCore/fsh-generated
-CRCore/input-cache
-CRCore/output
-CRCore/temp
-CRCore/template
+template
+fsh-generated
+input-cache
+output
+temp

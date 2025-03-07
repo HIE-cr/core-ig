@@ -1,0 +1,15 @@
+{
+    "package-id" : "hl7.fhir.cr.core",
+    "title" : "Guías de Implementación HL7 FHIR: CR Core", 
+    "canonical" : "https://ministeriodesalud.go.cr/fhir/core", 
+    "introduction" : "Esta IG define los perfiles de recursos y extensiones de CR Core.",
+    "list" : [
+        {
+            "version" : "current",
+            "desc" : "Continuous Integration Build (latest in version control)",
+            "path" : "https://ministeriodesalud.go.cr/fhir/core",
+            "status" : "ci-build",
+            "current" : true
+        }
+    ]
+}

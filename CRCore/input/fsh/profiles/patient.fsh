@@ -36,7 +36,9 @@ Description:        "Perfil de Paciente para el uso en Costa Rica"
 * name 1.. MS
   * use = #official
   * family 1.. MS
+  * family ^short = "Apellidos del paciente."
   * given 1.. MS
+  * given ^short = "Nombres del paciente."
 
 /* Género */
 * gender 0..1

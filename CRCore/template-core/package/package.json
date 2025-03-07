@@ -1,0 +1,12 @@
+{
+    "name": "hl7.fhir.cr.core",
+    "version": "0.1.0-draft",
+    "type": "fhir.template",
+    "license": "CC0-1.0",
+    "description": "Esta IG define los perfiles de recursos y extensiones de CR Core.",
+    "author": "https://ministeriodesalud.go.cr/fhir",
+    "base": "fhir.base.template",
+    "dependencies": {
+        "fhir.base.template": "current"
+    }
+}

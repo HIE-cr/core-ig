@@ -1,0 +1,27 @@
+.draft-note::before {
+    white-space: pre;
+    content: "Nota Draft\A ";
+    color: red;
+    font-weight: bold;
+}
+
+.draft-note {
+	margin: 5px;
+    padding:10px;
+    background-color: #fff2ff;
+    border-left-color: #ffa0ff;
+}
+
+.note-to-balloters, .draft-note {
+    margin: 5px;
+    padding: 10px;
+    border-left-style: solid;
+}
+
+.note-to-balloters, .draft-note {
+    margin: 5px;
+    padding: 10px;
+    border-left-style: solid;
+    background-color: var(--stu-note-background-color);
+    border-left-color: var(--stu-note-border-left-color);
+}

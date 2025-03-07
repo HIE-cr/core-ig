@@ -1,0 +1,62 @@
+name: Comentario Público
+description: Presentar un informe de error
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ¡Gracias por tomarte el tiempo para completar este informe de error!
+        
+  - type: input
+    id: contact
+    attributes:
+      label: Datos de contacto
+      description: ¿Cómo podemos contactarte para obtener más información sobre este informe de error?
+      placeholder: ej. email@example.com
+    validations:
+      required: false
+
+  - type: textarea
+    id: where
+    attributes:
+      label: Número de sección
+      description: Identifique el número de sección más específico donde ocurre el problema.
+      placeholder: ej. 2.1.1
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Descripción del problema
+      description: Describe tu problema. No escribas un libro, pero incluye lo suficiente para indicar lo que consideras un problema.
+      placeholder: ej. La sección 2.1.1 no incluye un ejemplo de uso de la extensión.
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Describe la solución que te gustaría
+      description: Una descripción clara y concisa de lo que quieres que suceda.
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Prioridad
+      multiple: false
+      description: ¿Qué tan importante es este problema para ti?
+      options:
+        - Alto: Asunto importante en el que hay un problema importante por resolver. Requiere discusión y debate.
+        - Medio: Problema o aclaración importante. Requiere discusión, pero no debe dar lugar a un debate prolongado.
+        - Bajo: Error tipográfico u otra clasificación menor que un editor puede manejar. No requiere discusión en grupo.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Código de conducta
+      description: Al enviar esta solicitud de función, usted acepta seguir las normas .
+      options:
+        - label: Acepto seguir el Código de conducta
+          required: true

@@ -1,0 +1,28 @@
+/* ##################################################################### 
+# Type:         FSH-File for a FHIR® ValueSet Resource
+# About:        HL7® FHIR® CORE Costa Rica
+# Created by:   National Working Group for FHIR® - Costa Rica
+# Date:         2025-03-03
+# FHIR version: 5.0.0
+# Authors:      - Ministerio de Salud
+#               - Caja Costarricense de Seguro Social
+#               - Camara Costarricense de la Salud
+#               - Cámara de Tecnologías de Información y Comunicación
+#               - Global Life-Centered Hub
+#               - Instituto Nacional de Seguros
+######################################################################*/
+
+Alias:      identifierType = http://terminology.hl7.org/CodeSystem/v2-0203
+
+ValueSet:   IdentificationTypePatient
+Id:         Identification-type-patient
+Title:      "Tipo de Identificación del Paciente"
+Description: "Tipo de Identificación del Paciente para el CORE de Costa Rica"
+* ^status = #active
+* ^experimental = true
+* ^publisher = "Ministerio de Salud de Costa Rica"
+
+* identifierType#NI "Número de Identificación del Paciente"
+* identifierType#PPN "Número de Pasaporte"
+* identifierType#MR "Número de Registro Médico"
+* identifierType#NPI "Número de Identificación del Proveedor Nacional"

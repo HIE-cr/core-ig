@@ -1,0 +1,14 @@
+{
+    "name": "hl7.fhir.cr.core",
+    "type" : "fhir.template",
+    "version": "0.1.0-draft",
+    "canonical" : "http://fhir.org/templates/fhir.base.template",
+    "author" : "http://hl7.org/fhir",
+    "description": "Guías de Implementación HL7 FHIR: CR Core",
+    "base": "fhir.base.template",
+    "dependencies": {
+        "fhir.base.template": "current"
+    },
+    "jurisdiction": "http://unstats.un.org/unsd/methods/m49/m49.htm#188",
+    "license": "CC0-1.0"
+}

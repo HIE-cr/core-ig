@@ -52,6 +52,26 @@ msgstr ""
 
 #. A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
 msgctxt "ImplementationGuide.ImplementationGuide.definition.resource.name"
+msgid "Ejemplo básico de un Paciente Nacional"
+msgstr ""
+
+#. A description of the reason that a resource has been included in the implementation guide.
+msgctxt "ImplementationGuide.ImplementationGuide.definition.resource.description"
+msgid "Ejemplo básico de un paciente con nacionalidad definida."
+msgstr ""
+
+#. A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
+msgctxt "ImplementationGuide.ImplementationGuide.definition.resource.name"
+msgid "Listado de Países"
+msgstr ""
+
+#. A description of the reason that a resource has been included in the implementation guide.
+msgctxt "ImplementationGuide.ImplementationGuide.definition.resource.description"
+msgid "Listado de países según la norma ISO 3166-1 alpha-3"
+msgstr ""
+
+#. A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
+msgctxt "ImplementationGuide.ImplementationGuide.definition.resource.name"
 msgid "Modelo de Establecimiento de Salud"
 msgstr ""
 
@@ -78,6 +98,16 @@ msgstr ""
 #. A description of the reason that a resource has been included in the implementation guide.
 msgctxt "ImplementationGuide.ImplementationGuide.definition.resource.description"
 msgid "Modelo del Profesional de la Salud para el CORE de Costa Rica"
+msgstr ""
+
+#. A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).
+msgctxt "ImplementationGuide.ImplementationGuide.definition.resource.name"
+msgid "Nacionalidad de una persona."
+msgstr ""
+
+#. A description of the reason that a resource has been included in the implementation guide.
+msgctxt "ImplementationGuide.ImplementationGuide.definition.resource.description"
+msgid "Nacionalidad de una persona."
 msgstr ""
 
 #. A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).

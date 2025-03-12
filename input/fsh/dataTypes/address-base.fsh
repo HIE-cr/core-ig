@@ -15,7 +15,7 @@
 Profile:            AddressBaseCrCore
 Parent:             Address
 Id:                 address-base-cr-core
-Title:              "Perfil Dirección (Core)"
+Title:              "Dirección (Core)"
 Description:        "Perfil de Dirección para el uso en Costa Rica"
 
 * ^version = "1.0.0"

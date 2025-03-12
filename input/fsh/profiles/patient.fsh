@@ -22,7 +22,7 @@ Profile:            PatientCrCore
 Parent:             Patient
 Id:                 patient-cr-core
 Title:              "Paciente (Core)"
-Description:        "Perfil de Paciente para el uso en Costa Rica"
+Description:        "Perfil de Paciente (Patient)"
 
 * insert ProfileMeta
 * insert RuleSetStatus (0, draft, pc)

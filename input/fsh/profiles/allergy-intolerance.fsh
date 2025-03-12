@@ -32,6 +32,10 @@ Description:    "Perfil de Alergias e Intolerancias (AllergyIntolerance)"
   * ^short = "allergy | intolerance"
   * ^definition = "Tipo de reacción: alergia o intolerancia."
 
+* category MS
+  * ^short = "food | medication | environment | biologic"
+  * ^definition = "Categoría de la alergia o intolerancia."
+
 * criticality MS
 * criticality from http://hl7.org/fhir/ValueSet/allergy-intolerance-criticality (required)
   * ^short = "low | high | unable-to-assess"

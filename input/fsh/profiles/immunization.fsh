@@ -24,6 +24,11 @@ Description: "Registro de Inmunización (Immunization)"
 * identifier ^short = "Identificador(es) por los que se conoce este registro de Inmunización. En el caso del sistema público correspondería al ID del Registro de Inmunización"
 * identifier ^definition = "Es el número de identificación del evento donde a un paciente se le administra una vacuna o registro de inmunización" 
 
+* status MS
+* status ^short = "completed | entered-in-error | not-done"
+* status ^definition = "Indica el estado actual del evento de inmunización"
+* status from http://hl7.org/fhir/ValueSet/immunization-status (required)
+
 * patient MS
 * patient only Reference(PatientCrCore)
 * patient ^short = "Paciente inmunizado"

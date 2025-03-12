@@ -37,8 +37,10 @@ Description:        "Perfil de Paciente (Patient)"
  @comment: - Se espera que el paciente tenga al menos un identificador
  */
 * identifier 1.. MS
-  * system 1.. MS
-  * system ^short = "Sistema de identificación del paciente."
+  * type 0..1
+  * type ^short = "Tipo de identificación del paciente."
+  * type ^definition = "Tipo de identificación del Paciente."
+  * type from PatientIdentifierType
   * value 1.. MS
   * value ^short = "Código de identificación del paciente o número de documento."
   * period ^short = "Periodo de validez del identificador del documento de identificación."

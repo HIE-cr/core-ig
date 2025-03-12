@@ -62,6 +62,30 @@
         {
           "id" : "ImplementationGuide.ImplementationGuide.definition.resource.name",
           "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Ejemplo básico de un Paciente Nacional",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Ejemplo básico de un paciente con nacionalidad definida.",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Listado de Países",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Listado de países según la norma ISO 3166-1 alpha-3",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
           "source" : "Modelo de Establecimiento de Salud",
           "target" : null
         },
@@ -93,6 +117,18 @@
           "id" : "ImplementationGuide.ImplementationGuide.definition.resource.description",
           "context" : "A description of the reason that a resource has been included in the implementation guide.",
           "source" : "Modelo del Profesional de la Salud para el CORE de Costa Rica",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.ImplementationGuide.definition.resource.name",
+          "context" : "A human assigned name for the resource. All resources SHOULD have a name, but the name may be extracted from the resource (e.g. ValueSet.name).",
+          "source" : "Nacionalidad de una persona.",
+          "target" : null
+        },
+        {
+          "id" : "ImplementationGuide.ImplementationGuide.definition.resource.description",
+          "context" : "A description of the reason that a resource has been included in the implementation guide.",
+          "source" : "Nacionalidad de una persona.",
           "target" : null
         },
         {

@@ -1,0 +1,95 @@
+{
+  "id" : "Patient-PatientBasic",
+  "baseLang" : "en",
+  "languages" : [
+    {
+      "targetLang" : "es",
+      "entries" : [
+        {
+          "id" : "Patient.Patient.identifier.extension.valueCodeableConcept.coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "Costa Rica",
+          "target" : null
+        },
+        {
+          "id" : "Patient.Patient.identifier.assigner.display",
+          "context" : "Plain text narrative that identifies the resource in addition to the resource reference.",
+          "source" : "Registro Civil de Costa Rica",
+          "target" : null
+        },
+        {
+          "id" : "Patient.Patient.name.family",
+          "context" : "The part of a name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father.",
+          "source" : "Rodríguez Pérez",
+          "target" : null
+        },
+        {
+          "id" : "Patient.Patient.name.given",
+          "context" : "Given name.",
+          "source" : "María José",
+          "target" : null
+        },
+        {
+          "id" : "Patient.Patient.address.line",
+          "context" : "This component contains the house number, apartment number, street name, street direction,  P.O. Box number, delivery hints, and similar address information.",
+          "source" : "San José, Curridabat, Granadilla, 300m sur del parque",
+          "target" : null
+        },
+        {
+          "id" : "Patient.Patient.address.city",
+          "context" : "The name of the city, town, suburb, village or other community or delivery center.",
+          "source" : "Curridabat",
+          "target" : null
+        },
+        {
+          "id" : "Patient.Patient.address.state",
+          "context" : "Sub-unit of a country with limited sovereignty in a federally organized country. A code may be used if codes are in common use (e.g. US 2 letter state codes).",
+          "source" : "San José",
+          "target" : null
+        },
+        {
+          "id" : "Patient.Patient.address.postalCode",
+          "context" : "A postal code designating a region defined by the postal service.",
+          "source" : "11801",
+          "target" : null
+        },
+        {
+          "id" : "Patient.Patient.address.country",
+          "context" : "Country - a nation as commonly understood or generally accepted.",
+          "source" : "Costa Rica",
+          "target" : null
+        },
+        {
+          "id" : "Patient.Patient.maritalStatus.coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "Married",
+          "target" : null
+        },
+        {
+          "id" : "Patient.Patient.contact.relationship.coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "Next of Kin",
+          "target" : null
+        },
+        {
+          "id" : "Patient.Patient.contact.name.family",
+          "context" : "The part of a name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father.",
+          "source" : "Rodríguez López",
+          "target" : null
+        },
+        {
+          "id" : "Patient.Patient.contact.name.given",
+          "context" : "Given name.",
+          "source" : "Juan Carlos",
+          "target" : null
+        },
+        {
+          "id" : "Patient.Patient.communication.language.coding.display",
+          "context" : "A representation of the meaning of the code in the system, following the rules of the system.",
+          "source" : "Español (Costa Rica)",
+          "target" : null
+        }
+      ]
+    }
+  ]
+}

@@ -100,10 +100,10 @@ parameters:
   show-inherited-invariants: true
   usage-stats-opt-out: true
   tabbed-snapshots: true
-  translation-supplements: input/translations  
-  i18n-default-lang: es
-  i18n-lang: 
-    - en
+#  translation-supplements: input/translations  
+#  i18n-default-lang: es
+#  i18n-lang: 
+#    - en
 
 #   validation: [allow-any-extensions, no-broken-links]
 #

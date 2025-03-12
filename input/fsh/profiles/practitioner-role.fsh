@@ -23,7 +23,7 @@ Profile:            PractitionerRoleCrCore
 Parent:             PractitionerRole
 Id:                 practitioner-role-cr-core
 Title:              "Rol de Profesional de la Salud (Core)"
-Description:        "Perfil de Rol de Profesional de la Salud para el uso en Costa Rica"
+Description:        "Perfil de Rol de Profesional de la Salud (PractitionerRole)"
 
 * insert ProfileMeta
 * insert RuleSetStatus (0, draft, pc)

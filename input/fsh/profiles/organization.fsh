@@ -22,7 +22,7 @@ Profile:            OrganizationCrCore
 Parent:             Organization
 Id:                 organization-cr-core
 Title:              "Organizaciones (Core)"
-Description:        "Perfil de Organizaciones para el uso en Costa Rica"
+Description:        "Perfil de Organizaciones (Organization)"
 
 * insert ProfileMeta
 * insert RuleSetStatus (0, draft, pc)

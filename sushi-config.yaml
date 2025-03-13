@@ -72,6 +72,13 @@ publisher:
 pages:
   index.md:
     title: Inicio
+  security.md:
+    title: Seguridad
+  downloads.md:
+    title: Descargas
+  changes.md:
+    title: Cambios
+
 
 #
 #
@@ -117,7 +124,10 @@ parameters:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Inicio: index.html
+  Seguridad: security.html
   Artefactos: artifacts.html
+  Descargas: downloads.html
+  Cambios: changes.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │

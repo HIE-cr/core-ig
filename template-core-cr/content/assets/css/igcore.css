@@ -25,3 +25,12 @@
     background-color: var(--stu-note-background-color);
     border-left-color: var(--stu-note-border-left-color);
 }
+
+.sample-restful-transaction img {
+    width: 75%;
+    float: unset !important;
+}
+
+table.grid {
+    width: 100%;
+}

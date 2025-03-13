@@ -50,22 +50,3 @@ Para los sistemas que admiten la estructura de contenido del Perfil Core de Cost
 
 Consulte la especificación FHIR para obtener detalles sobre [la API de búsqueda RESTful de FHIR](https://hl7.org/fhir/R5/http.html#search) y el [lanzamiento de aplicaciones SMART](https://hl7.org/fhir/smart-app-launch/STU2/) para saber cómo una aplicación obtiene acceso a un registro de paciente.
 
-<hr />
-
-### Autores y Colaboradores
-
-|  Rol         | Nombre                                                                                     | Organización                                                              |
-| ------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------- |
-| Autor Perfilador       | [Alejandro Benavides](https://www.linkedin.com/in/abenavides/) | **[Meddyg](https://meddyg.com/)** & [Global Life-Centered Hub](https://www.linkedin.com/company/global-life-centered-hub/)                                            |
-| Autor Perfilador       | [Iván Rojas](https://www.linkedin.com/in/iv%C3%A1n-rojas-chaves-115254309)                 | [Caja Costarricense del Seguro Social](https://www.ccss.sa.cr)            |
-| Colaboradora Clínica  | [Désirée Rojas](https://www.linkedin.com/in/d%C3%A9sir%C3%A9e-rojas-sterner-32b42448/)     | [Instituto Nacional de Seguros](https://www.grupoins.com/)                |
-| Colaborador Normativo | [Daniel Quesada](https://www.linkedin.com/in/daniel-quesada-alvarado-b6ba78256/)           | [Ministerio de Salud de Costa Rica](https://www.ministeriodesalud.go.cr/) |
-| Colaborador Normativo | [Pedro Meckbel](https://www.linkedin.com/in/pedro-meckbel-guillen-5a01b8250/)       | [Ministerio de Salud de Costa Rica](https://www.ministeriodesalud.go.cr/) |
-| Colaborador Clínico | [Eduardo Rodríguez](https://www.linkedin.com/in/eduardo-rodr%C3%ADguez-cubillo-33b444221/) | [Caja Costarricense del Seguro Social](https://www.ccss.sa.cr)            |
-| Colaborador Técnico | [Paul Fervoy](https://www.linkedin.com/in/paulfervoy/) | **[Siftia](https://siftia.tech/)** & [Cámara de Tecnología de Información y Comunicación](https://www.camtic.org/)                                          |
-| Colaboradora Clínica | [Lucía Carvajal](https://www.linkedin.com/in/lucarvajal506/)                              | [Siftia](https://siftia.tech/)                                            |
-| Colaborador Técnico | [Francisco José Fernández](https://www.linkedin.com/in/fjfernandezlopez/)                  | [SOIN](https://www.soin.co.cr)                                            |
-| Colaborador Técnico | [Steve Vega](https://www.linkedin.com/in/stevevega/)                   | **[Huli](https://www.ccss.sa.cr)** & [Cámara Costarricense de la Salud](https://salud.co.cr/) |
-| Colaborador Técnico | [David Poveda](https://www.linkedin.com/in/dpoveda/)                                       | [SAC](https://www.saludaunclick.com/) |
-| Colaborador Técnico | [Anton Ilarionov](https://www.linkedin.com/in/anton-ilarionov/)                            | [SAC](https://www.saludaunclick.com/) |
-{: .grid }

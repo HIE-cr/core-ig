@@ -122,7 +122,7 @@ Description:        "Perfil de Paciente (Patient)"
  */
 * telecom 0..*
 * telecom ^short = "Detalles de contacto del Paciente"
-* telecom ^definition = "Detalles del contacto de un paciente comúnmente el o los más usados (Ej: Teléfono fijo, móvil, email, etc.)"
+* telecom ^definition = "Detalles del contacto de un paciente comúnmente el o los más usados (Ej: Teléfono fijo, móvil, email, etc.). Los números de teléfono deben seguir el formato E.164: +[código país][número], por ejemplo: +506XXXXXXXX para Costa Rica."
 
 
 /* 

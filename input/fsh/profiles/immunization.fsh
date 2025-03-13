@@ -15,7 +15,7 @@ Profile:    ImmunizationCrCore
 Parent:     Immunization
 Id:         immunization-cr-core
 Title:      "Inmunización (Core)"
-Description: "Registro de Inmunización (Immunization)"
+Description: "Perfil de Registro de Inmunización (Immunization)"
 
 * insert ProfileMeta
 * insert RuleSetStatus (0, draft, pc)

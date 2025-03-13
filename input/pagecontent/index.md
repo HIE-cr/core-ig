@@ -5,50 +5,67 @@ Tenga en cuenta que esta guía de implementación aún se encuentra en desarroll
 
 ### Introducción
 
-Bienvenido a la Guía de Implementación HL7 FHIR CORE para Costa Rica. Esta guía establece el conjunto de especificaciones y perfiles FHIR diseñados para garantizar la interoperabilidad de los sistemas de información en salud en el país. 
+Esta guía y los perfiles de CR Core se han convertido en la base de las guías de implementación de FHIR en el ámbito de Costa Rica. Esta versión refleja los cambios, comentarios y solicitudes de la comunidad de FHIR en el ámbito de Costa Ruca. CR Core se ha beneficiado de las pruebas y la orientación del equipos multisectorial a nivel nacional. Sus comentarios siguen sentando las bases para documentar el diseño, las interacciones, los requisitos y las directrices del Perfil de CR Core para el acceso a los datos de pacientes. Bajo la guía de los entes nacionales y regionales que tiene expertis en HL7 en el ámbito de Costa Rica, el contenido se ampliará en futuras versiones para satisfacer las necesidades específicas del ámbito de Costa Rica.
 
-El estándar **FHIR (Fast Healthcare Interoperability Resources)** de HL7 proporciona un modelo de datos flexible y extensible para el intercambio de información clínica y administrativa en salud. La presente guía se basa en las mejores prácticas internacionales y se adapta al contexto normativo y técnico de Costa Rica.
+La Guía de Implementación de CR Core se basa en la versión R5 de FHIR. Define las restricciones mínimas de los recursos de FHIR para crear los perfiles de CR Core. Se identifican los elementos, extensiones, vocabularios y conjuntos de valores que **DEBEN** estar presentes y se define su uso. También documenta las interacciones RESTful mínimas de FHIR para que cada perfil de CR Core acceda a los datos de los pacientes. El establecimiento de estándares mínimos para promover la interoperabilidad y la adopción mediante una implementación común permite una mayor evolución del desarrollo de estándares para casos de uso específicos. Existen dos maneras diferentes de implementar CR Core:
 
-### Alcance
+1. Soporte solo para perfiles: los sistemas pueden admitir solo los perfiles principales de Costa Rica para representar información clínica.
+2. Soporte de perfil + Soporte de interacción: los sistemas pueden soportar tanto la estructura de contenido del perfil principal de Costa Rica como las interacciones RESTful definidas para un recurso.
 
-Esta guía define los perfiles, extensiones, terminologías y reglas de negocio para el intercambio de datos clínicos y administrativos en Costa Rica, incluyendo:
+Para obtener una descripción detallada de estos diferentes usos de CR Core, consulte la página de Requisitos de conformidad.
 
-- Identificación unificada de pacientes y profesionales de salud.
-- Modelado de recursos para registros clínicos interoperables.
-- Terminologías y codificaciones estandarizadas (SNOMED CT, CIE-10, LOINC, entre otras).
-- Mecanismos de autenticación y autorización para el acceso seguro a los datos.
-- Reglas para la validación e intercambio de información entre entidades de salud.
+### Antecedente
+En Costa Rica, el ecosistema de salud está compuesto por múltiples actores, incluyendo la Caja Costarricense de Seguro Social (CCSS), el Ministerio de Salud, el Instituto Nacional de Seguros (INS), y diversos proveedores privados de servicios de salud. A pesar de los avances en digitalización, la fragmentación de los sistemas de información ha representado un obstáculo para la interoperabilidad efectiva entre instituciones, limitando el acceso oportuno a datos clínicos y administrativos, lo que impacta la continuidad del cuidado y la eficiencia operativa.
 
-### Público Objetivo
+En el ámbito internacional, estándares como HL7 FHIR (Fast Healthcare Interoperability Resources) han sido adoptados ampliamente para mejorar la interoperabilidad y el intercambio de información en salud, alineándose con iniciativas globales promovidas por la Organización Panamericana de la Salud (OPS/PAHO), la Organización Mundial de la Salud (OMS) y HL7 International.
 
-Esta guía está dirigida a:
+En este contexto, surge la necesidad de desarrollar la Guía de Implementación CORE para Costa Rica, con el objetivo de establecer un conjunto mínimo de requisitos y perfiles FHIR que permitan la estandarización del intercambio de información clínica y administrativa entre los diferentes actores del sistema de salud. Esta guía se fundamenta en las mejores prácticas internacionales y busca servir como referencia para futuras iniciativas de interoperabilidad en el país, facilitando la integración con arquitecturas nacionales e internacionales de salud digital.
 
-- **Desarrolladores e implementadores** de sistemas de información en salud.
-- **Proveedores de software** que deseen asegurar compatibilidad con los estándares nacionales.
-- **Entidades gubernamentales y reguladoras** responsables de definir políticas de interoperabilidad.
-- **Profesionales en informática en salud** interesados en la implementación del estándar FHIR.
+### Cómo leer esta guía
+Esta guía está dividida en varias páginas, que se enumeran en la parte superior de cada página en la barra de menú.
 
-### Estructura de la Guía
+- [Inicio](#): la página de inicio proporciona la introducción y los antecedentes de CR Core.
+- [Conformidad](#): estas páginas describen el conjunto de reglas para reclamar la conformidad con esta guía.
+- [Artefactos FHIR](#): estas páginas proporcionan descripciones detalladas y definiciones formales para todos los objetos FHIR definidos en esta guía
+- [Seguridad](#): Esta página documenta los requisitos generales de seguridad y recomendaciones para los actores.
+- [Descargas](#): esta página proporciona enlaces a los artefactos de CR Core.
+- [Registro de cambios](#): esta página proporciona un registro de cambios para la guía de implementación de CR Core.
 
-Esta Guía de Implementación está organizada en las siguientes secciones:
+### Actores principales de Costa Rica
+Los siguientes actores forman parte del IG central de Costa Rica:
 
-1. **Perfiles FHIR CORE CR**: Definiciones específicas de los perfiles FHIR utilizados en Costa Rica.
-2. **Extensiones**: Elementos adicionales requeridos para capturar información específica del país.
-3. **Valores permitidos (ValueSets y CodeSystems)**: Conjuntos de valores estandarizados para garantizar la uniformidad de datos.
-4. **Casos de uso y ejemplos**: Ejemplos prácticos de implementación para distintos escenarios clínicos y administrativos.
-5. **Requisitos de interoperabilidad**: Reglas técnicas y de negocio para el intercambio de información.
+#### Solicitante
+Es una aplicación que inicia una solicitud de acceso a datos para recuperar datos de pacientes. El solicitante del CR Core es el cliente en una interacción cliente-servidor. Los términos "Solicitante del CR Core" y "Cliente" se utilizan indistintamente a lo largo de esta guía y no pretenden limitar este actor únicamente a las aplicaciones de pacientes y proveedores. Por ejemplo, los pagadores y otros usuarios pueden usar la misma tecnología. Estos términos son una abreviatura de "aplicación de usuario".
 
-### Notas Adicionales
+#### Proveedor de respuesta
+Es un sistema que responde a la solicitud de acceso a datos, proporcionando datos del paciente. El Proveedor de respuesta del CR Core es el servidor en una interacción cliente-servidor. Los términos "Proveedor de respuesta del CR Core", "Servidor" y "HCE" se utilizan indistintamente a lo largo de esta guía y no pretenden limitar este actor a los sistemas de registros médicos electrónicos. Por ejemplo, los HIE, las plataformas de coordinación de la atención, los sistemas de salud poblacional, etc., pueden utilizar la misma tecnología. Estos términos son una abreviatura de "plataforma de atención médica interoperable".
 
-Esta guía se basa en la versión **FHIR R5**, con adaptaciones específicas para el ecosistema costarricense. Se recomienda su uso en el desarrollo e integración de soluciones de salud digital que requieran interoperabilidad.
+### Interacciones RESTful del CR Core FHIR
+Para los sistemas que admiten la estructura de contenido del Perfil Core de Costa Rica y las interacciones RESTful definidas para un recurso, los requisitos se definen formalmente en las Declaraciones de Capacidad del CR Core. Además, cada página de perfil incluye una sección de inicio rápido que documenta las operaciones de búsqueda y lectura RESTful de FHIR requeridas. Estas secciones muestran cómo acceder a los datos clínicos y administrativos de un paciente:
 
-Para contribuir con la evolución de esta guía o reportar mejoras, por favor consulta el [repositorio oficial](https://github.com/HL7-MISALUDCR/IGCORE-CR) o contacta al equipo de que mantiene el las guía de implementación.
+**Ejemplo de una transacción de búsqueda RESTful FHIR simple**
 
-### Autores
+{:.sample-restful-transaction}
+![alt text](assets/images/cr-core-restful-fhir.png "Ejemplo de una transacción de búsqueda RESTful FHIR simple")
 
-Esta guía ha sido desarrollada por un equipo multidisciplinario de expertos en informática en salud, en colaboración con el Ministerio de Salud de Costa Rica y la comunidad HL7 local.
+Consulte la especificación FHIR para obtener detalles sobre [la API de búsqueda RESTful de FHIR](https://hl7.org/fhir/R5/http.html#search) y el [lanzamiento de aplicaciones SMART](https://hl7.org/fhir/smart-app-launch/STU2/) para saber cómo una aplicación obtiene acceso a un registro de paciente.
 
+<hr />
 
-### Agradecimientos
+### Autores y Colaboradores
 
-Agradecemos a todos los profesionales y organizaciones que han contribuido con la creación de esta guía, así como a la comunidad HL7 por su apoyo en la adopción de estándares internacionales en salud digital.
+|  Rol         | Nombre                                                                                     | Organización                                                              |
+| ------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------- |
+| Autor Perfilador       | [Alejandro Benavides](https://www.linkedin.com/in/abenavides/) | **[Meddyg](https://meddyg.com/)** & [Global Life-Centered Hub](https://www.linkedin.com/company/global-life-centered-hub/)                                            |
+| Autor Perfilador       | [Iván Rojas](https://www.linkedin.com/in/iv%C3%A1n-rojas-chaves-115254309)                 | [Caja Costarricense del Seguro Social](https://www.ccss.sa.cr)            |
+| Colaboradora Clínica  | [Désirée Rojas](https://www.linkedin.com/in/d%C3%A9sir%C3%A9e-rojas-sterner-32b42448/)     | [Instituto Nacional de Seguros](https://www.grupoins.com/)                |
+| Colaborador Normativo | [Daniel Quesada](https://www.linkedin.com/in/daniel-quesada-alvarado-b6ba78256/)           | [Ministerio de Salud de Costa Rica](https://www.ministeriodesalud.go.cr/) |
+| Colaborador Normativo | [Pedro Meckbel](https://www.linkedin.com/in/pedro-meckbel-guillen-5a01b8250/)       | [Ministerio de Salud de Costa Rica](https://www.ministeriodesalud.go.cr/) |
+| Colaborador Clínico | [Eduardo Rodríguez](https://www.linkedin.com/in/eduardo-rodr%C3%ADguez-cubillo-33b444221/) | [Caja Costarricense del Seguro Social](https://www.ccss.sa.cr)            |
+| Colaborador Técnico | [Paul Fervoy](https://www.linkedin.com/in/paulfervoy/) | **[Siftia](https://siftia.tech/)** & [Cámara de Tecnología de Información y Comunicación](https://www.camtic.org/)                                          |
+| Colaboradora Clínica | [Lucía Carvajal](https://www.linkedin.com/in/lucarvajal506/)                              | [Siftia](https://siftia.tech/)                                            |
+| Colaborador Técnico | [Francisco José Fernández](https://www.linkedin.com/in/fjfernandezlopez/)                  | [SOIN](https://www.soin.co.cr)                                            |
+| Colaborador Técnico | [Steve Vega](https://www.linkedin.com/in/stevevega/)                   | **[Huli](https://www.ccss.sa.cr)** & [Cámara Costarricense de la Salud](https://salud.co.cr/) |
+| Colaborador Técnico | [David Poveda](https://www.linkedin.com/in/dpoveda/)                                       | [SAC](https://www.saludaunclick.com/) |
+| Colaborador Técnico | [Anton Ilarionov](https://www.linkedin.com/in/anton-ilarionov/)                            | [SAC](https://www.saludaunclick.com/) |
+{: .grid }

@@ -3,9 +3,9 @@ feedback:
   - active: true
     dashboard:
       label: New Issue
-      url: https://github.com/HL7-MISALUDCR/IGCORE-CR/issues/new/choose
+      url: https://github.com/hiecr/ig-core/issues/new/choose
   - active: true
     dashboard:
       label: Issues
-      url: https://github.com/HL7-MISALUDCR/IGCORE-CR/issues
+      url: https://github.com/hiecr/ig-core/issues
 

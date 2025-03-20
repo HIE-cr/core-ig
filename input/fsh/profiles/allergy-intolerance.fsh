@@ -33,16 +33,17 @@ Description:    "Perfil de Alergias e Intolerancias (AllergyIntolerance)"
   * ^definition = "Tipo de reacción: alergia o intolerancia."
 
 * category MS
-  * ^short = "food | medication | environment | biologic"
+* category from AllergyIntoleranceCategory (required)
+  * ^short = "food | medication | environment | biologic | vaccine"
   * ^definition = "Categoría de la alergia o intolerancia."
 
 * criticality MS
-* criticality from http://hl7.org/fhir/ValueSet/allergy-intolerance-criticality (required)
+* criticality from AllergyIntoleranceCriticality (required)
   * ^short = "low | high | unable-to-assess"
   * ^definition = "Gravedad de la reacción."
 
 * code 1.. MS
-* code from http://hl7.org/fhir/ValueSet/allergyintolerance-code (example)
+* code from AllergyIntoleranceCode (required)
   * ^short = "Código SNOMED-CT de la alergia o intolerancia."
   * ^definition = "Código SNOMED-CT de la alergia o intolerancia."
 
@@ -62,8 +63,9 @@ Description:    "Perfil de Alergias e Intolerancias (AllergyIntolerance)"
   * manifestation MS
     * ^short = "Manifestación clínica y sintomas del evento adverso"
     * ^definition = "Manifestación clínica y sintomas del evento adverso"
-  * manifestation from http://hl7.org/fhir/ValueSet/clinical-findings (example)
+  * manifestation from ClinicalFindings (required)
 
   * severity MS
-    * ^short = "mild | moderate | severe"
-  * severity from http://hl7.org/fhir/ValueSet/reaction-event-severity (required)
+    * ^short = "mild | severe"
+    * ^definition = "Gravedad de la reacción."
+  * severity from ReactionEventSeverity (required)

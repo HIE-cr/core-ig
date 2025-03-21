@@ -74,6 +74,7 @@ Description: "Perfil de Registro de Inmunización (Immunization)"
 * status from http://hl7.org/fhir/ValueSet/immunization-status (required)
 
 * statusReason  MS
+* statusReason from ImmunizationStatusReason (required)
 * statusReason ^short = "Razón de no realizarse la inmunización"
 * statusReason ^definition = "Indica la razón por la que no se realizó el evento de inmunización"
 // TODO: Se require definir el ValueSet de razones

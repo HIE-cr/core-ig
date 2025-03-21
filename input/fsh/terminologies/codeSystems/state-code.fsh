@@ -22,10 +22,10 @@ Description:    "Código de provincia en formato Zip Code"
 
 // Incluimos todos los códigos de provincias
 
-* #1 "San José"
-* #2 "Alajuela"
-* #3 "Cartago"
-* #4 "Heredia"
-* #5 "Guanacaste"
-* #6 "Puntarenas"
-* #7 "Limon"
+* #1 "San José" "San José"
+* #2 "Alajuela" "Alajuela"
+* #3 "Cartago" "Cartago"
+* #4 "Heredia" "Heredia"
+* #5 "Guanacaste" "Guanacaste"
+* #6 "Puntarenas" "Puntarenas"
+* #7 "Limon" "Limon"

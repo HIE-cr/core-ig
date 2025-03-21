@@ -12,12 +12,19 @@
                 - Instituto Nacional de Seguros
 --------------------------------------------------------------------*/
 
-ValueSet:       ClinicalFindings
-Id:             clinical-findings
-Title:          "Hallazgos Clínicos"
-Description:    "Hallazgos Clínicos para Costa Rica"
+ValueSet:   ImmunizationStatusReason
+Id:         immunization-status-reason
+Title:      "Razón de Estado de Vacunación"
+Description: "Razón de estado de vacunación para Costa Rica"
 
 * insert ValueSetMeta
 * insert RuleSetStatus (0, draft, pc)
 
-* include codes from valueset $AllergyIntoleranceClinicalFindings
+* $ImmunizationStatusReason#IMMUNE "Inmunidad"
+* $ImmunizationStatusReason#MEDPREC "Precaución Médica"
+* $ImmunizationStatusReason#OSTOCK "Fuera de Stock"
+* $ImmunizationStatusReason#PATOBJ "Objeción del Paciente"
+* $ImmunizationStatusReason#PHILISOP "Objeción Filosófica"
+* $ImmunizationStatusReason#RELIG "Objeción Religiosa"
+* $ImmunizationStatusReason#VACEFF "Preocupación por la Efectividad de la Vacuna"
+* $ImmunizationStatusReason#VACSAF "Preocupación por la Seguridad de la Vacuna"

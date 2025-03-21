@@ -12,12 +12,12 @@
                 - Instituto Nacional de Seguros
 --------------------------------------------------------------------*/
 
-ValueSet:       ClinicalFindings
-Id:             clinical-findings
-Title:          "Hallazgos Clínicos"
-Description:    "Hallazgos Clínicos para Costa Rica"
+ValueSet:       CityList
+Id:             city-list
+Title:          "Listado de cantones"
+Description:    "Listado de cantones de Costa Rica"
 
 * insert ValueSetMeta
 * insert RuleSetStatus (0, draft, pc)
 
-* include codes from valueset $AllergyIntoleranceClinicalFindings
+* include codes from system CityCode

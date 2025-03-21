@@ -93,20 +93,20 @@ pages:
 #
 parameters:
   excludettl: true
-  path-resource:
-    - input/resources
-    - fsh-generated/resources
-  path-pages:
-    - input/pagecontent
-    - input/intro-notes
-    - fsh-generated/includes
-  apply-contact: true
-  apply-jurisdiction: true
-  apply-publisher: true
-  apply-version: true
-  show-inherited-invariants: true
-  usage-stats-opt-out: true
-  tabbed-snapshots: true
+  # path-resource:
+  #   - input/resources
+  #   - fsh-generated/resources
+  # path-pages:
+  #   - input/pagecontent
+  #   - input/intro-notes
+  #   - fsh-generated/includes
+  # apply-contact: true
+  # apply-jurisdiction: true
+  # apply-publisher: true
+  # apply-version: true
+  # show-inherited-invariants: true
+  # usage-stats-opt-out: true
+  # tabbed-snapshots: true
 #  translation-supplements: input/translations  
 #  i18n-default-lang: es
 #  i18n-lang: 

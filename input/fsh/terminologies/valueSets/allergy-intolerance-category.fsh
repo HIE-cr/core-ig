@@ -20,9 +20,9 @@ Description:    "Categoría de Alergia/Intolerancia para el CORE de Costa Rica"
 * insert ValueSetMeta
 * insert RuleSetStatus (0, draft, pc)
 
-* $AllergyIntoleranceCategory#food "Cualquier sustancia consumida para proporcionar apoyo nutricional al cuerpo."
-* $AllergyIntoleranceCategory#medication "Sustancias administradas para conseguir un efecto fisiológico."
-* $AllergyIntoleranceCategory#environment "Cualquier sustancia que se encuentre en el medio ambiente, incluida cualquier sustancia que no esté clasificada como alimento, medicamento o producto biológico."
-* $AllergyIntoleranceCategory#biologic "Una preparación sintetizada a partir de organismos vivos o sus productos, especialmente una proteína humana o animal, como una hormona o una antitoxina, que se utiliza como agente diagnóstico, preventivo o terapéutico. Entre los ejemplos de medicamentos biológicos se incluyen: extractos alergénicos; terapias génicas; terapias celulares. Existen otros productos biológicos, como los tejidos, que no suelen asociarse con alergias."
-* $AllergyIntoleranceCategory#vaccine "Una preparación que contiene un antígeno que se administra para estimular la respuesta inmunitaria y proporcionar inmunidad adquirida a una enfermedad."
+* $AllergyIntoleranceCategory#food "Alimentos y sus componentes." 
+* $AllergyIntoleranceCategory#medication "Medicamentos y sus componentes."
+* $AllergyIntoleranceCategory#environment "Sustancias ambientales, como polen, polvo, moho, caspa de animales, insectos, etc."
+* $AllergyIntoleranceCategory#biologic "Productos biológicos, como sueros, sangre y derivados, etc."
+* $AllergyIntoleranceCategory#vaccine "Vacunas y sus componentes."
 

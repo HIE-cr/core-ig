@@ -1,6 +1,6 @@
 ### Version 0.1.0-draft 
 - Fecha de publicación: 2025-03-13
-- url: <https://build.fhir.org/ig/hiecr/ig-core>
+- url: <https://build.fhir.org/ig/HIE-cr/core-ig>
 - Basada en versión FHIR: 5.0.0
 
 #### Cambios

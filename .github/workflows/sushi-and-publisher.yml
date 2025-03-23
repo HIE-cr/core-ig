@@ -18,4 +18,4 @@ jobs:
           docker run \
             -v $(pwd):/home/publisher/ig \
             hl7fhir/ig-publisher-base \
-            sh -c "sushi && ./_updatePublisher.sh --yes && ./_genonce.sh"
+            sh -c "cp .github/workflows/test sushi-config.yaml && sushi && ./_updatePublisher.sh --yes && ./_genonce.sh"

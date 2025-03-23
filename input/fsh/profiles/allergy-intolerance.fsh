@@ -68,4 +68,4 @@ Description:    "Perfil de Alergias e Intolerancias (AllergyIntolerance)"
   * severity MS
     * ^short = "mild | severe"
     * ^definition = "Gravedad de la reacción."
-  * severity from ReactionEventSeverity (required)
+  * severity from ReactionSeverityEvent (required)

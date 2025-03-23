@@ -12,15 +12,13 @@
                 - Instituto Nacional de Seguros
 --------------------------------------------------------------------*/
 
-ValueSet:       ReactionSeverityEvent
-Id:             reaction-severity-event
-Title:          "Severidad de la reacción"
-Description:    "Severidad de la reacción de un evento"
+ValueSet:       SpecialityList
+Id:             speciality-list
+Title:          "Listado de especialidades"
+Description:    "Listado de especialidades de un profesional de la salud"
 
 * insert ValueSetMeta
 * insert RuleSetStatus (0, draft, pc)
 
-// Incluimos los códigos de severidad de reacción
-* ^copyright = "Este recurso incluye contenido de SNOMED CT, el cual está sujeto a los derechos de autor de SNOMED International. SNOMED CT® fue desarrollado originalmente por el NHS británico."
-* include $ReactionEventSeverity#mild "Leve"
-* include $ReactionEventSeverity#severe "Severo"
+// Incluimos todas las especialidades de un profesional de la salud
+* include codes from system PractitionerCode

@@ -7,7 +7,7 @@ Alias: $AllergyIntoleranceCategory = http://hl7.org/fhir/allergy-intolerance-cat
 Alias: $AllergyIntoleranceCriticality = http://hl7.org/fhir/allergy-intolerance-criticality
 Alias: $AllergyIntoleranceCode = http://hl7.org/fhir/ValueSet/allergyintolerance-code
 Alias: $AllergyIntoleranceClinicalFindings = http://hl7.org/fhir/ValueSet/clinical-findings
-Alias: $ReactionEventSeverity = http://terminology.hl7.org/CodeSystem/reaction-event-severity
+Alias: $ReactionEventSeverity = http://hl7.org/fhir/reaction-event-severity
 
 // Immunization
 Alias: $ImmunizationStatusReason = http://terminology.hl7.org/CodeSystem/v3-ActReason

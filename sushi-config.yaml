@@ -1,0 +1,57 @@
+id: hl7.fhir.cr.core
+packageId: hl7.fhir.cr.core
+canonical: 'https://ministeriodesalud.go.cr/fhir/core'
+url: https://ministeriodesalud.go.cr/fhir/core/ImplementationGuide/hl7.fhir.cr.core
+
+name: CRCore
+title: "Guías de Implementación HL7 FHIR: CR Core"
+description: >-
+  Esta IG define los perfiles de recursos y extensiones de CR Core.
+
+extension:
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-wg
+    valueCode: cgp
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+    valueCode: draft
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm
+    valueInteger: 0
+
+status: draft
+version: '0.1.0-draft'
+fhirVersion: 5.0.0
+copyrightYear: 2025+
+copyright: >-
+  Utilizado con permiso de HL7 International, todos los derechos reservados Licencia Creative Commons
+date: 2025-03-03
+releaseLabel: ci-build
+license: CC0-1.0
+
+jurisdiction: urn:iso:std:iso:3166#CR "Costa Rica" 
+publisher:
+  name: "Ministerio de Salud de Costa Rica"
+  url: https://ministeriodesalud.go.cr/fhir
+  email: fhir@misalud.go.cr
+
+
+pages:
+  index.md:
+    title: Inicio
+  security.md:
+    title: Seguridad
+  downloads.md:
+    title: Descargas
+  changes.md:
+    title: Cambios
+
+parameters:
+  excludettl: true
+
+menu:
+  Inicio: index.html
+  Seguridad: security.html
+  Artefactos: artifacts.html
+  Descargas: downloads.html
+  Cambios: changes.html
+
+instanceOptions:
+  manualSliceOrdering: true # true | false

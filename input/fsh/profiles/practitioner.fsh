@@ -86,9 +86,6 @@ Description:        "Perfil de Profesional de Salud (Practitioner)"
 * birthDate ^short = "Fecha de nacimiento del Profesional de Salud."
 * birthDate ^definition = "Fecha de nacimiento del Profesional de Salud."
 
-* deceased[x] ^definition = "Indica si el Profesional de Salud ha fallecido y la fecha de fallecimiento."
-* deceased[x] ^short = "Indica si el Profesional de Salud ha fallecido y la fecha de fallecimiento."
-
 /* 
  @element: maritalStatus
  @concetp: Estado Civil del Profesional de Salud

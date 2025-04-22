@@ -14,8 +14,8 @@
 Profile:        BundleCrCore
 Parent:         Bundle
 Id:             bundle-cr-core
-Title:          "Paquete de Recursos (Core)"
-Description:    "Perfil de Paquete de Recursos (Bundle)"
+Title:          "Paquete de Recursos"
+Description:    "Perfil CORE de Paquete de Recursos (Bundle)"
 
 * insert ProfileMeta
 * insert RuleSetStatus (0, draft, pc)

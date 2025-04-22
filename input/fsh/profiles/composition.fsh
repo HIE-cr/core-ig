@@ -14,8 +14,8 @@
 Profile:    CompositionCrCore
 Parent:     Composition
 Id:         composition-cr-core
-Title:      "Composición (Core)"
-Description: "Perfil del Documento Clínico (Composition)"
+Title:      "Documento Clínico"
+Description: "Perfil CODE del Documento Clínico (Composition)"
 
 * insert ProfileMeta
 * insert RuleSetStatus (0, draft, pc)
@@ -27,7 +27,7 @@ Description: "Perfil del Documento Clínico (Composition)"
 * status MS
 * status ^short = "Estado del documento: preliminary | final | amended | entered-in-error"
 * status ^definition = "El estado del documento"
-* status from http://hl7.org/fhir/ValueSet/composition-status (required)
+* status from CompositionStatus (required)
 * status ^binding.description = "Códigos requeridos por estándar"
 
 * type MS
@@ -62,7 +62,7 @@ Description: "Perfil del Documento Clínico (Composition)"
 * attester ^definition = "Profesionales que validan el documento"
   * mode MS
   * mode ^short = "Rol del validador personal | profesional | legal | official"
-  * mode from http://hl7.org/fhir/ValueSet/composition-attestation-mode (required)
+  * mode from CompositionAttestationMode (required)
   * mode ^binding.description = "Códigos requeridos por FHIR"
 
   * time MS
@@ -89,7 +89,7 @@ Description: "Perfil del Documento Clínico (Composition)"
     * ^definition = "Texto que describe el título o propósito de la sección."
 
   * code 0.. MS
-  * code from http://hl7.org/fhir/ValueSet/doc-section-codes (example)
+  * code from DocumentSectionCodes (example)
     * ^short = "Código que define el tipo de sección"
     * ^definition = "Código que define el tipo de sección"
   

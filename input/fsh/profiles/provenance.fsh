@@ -15,8 +15,8 @@
 Profile:    ProvenanceCrCore
 Parent:     Provenance
 Id:         provenance-cr-core
-Title:      "Procedencia (Core)"
-Description: "Perfil de Procedencia de un recurso (Provenance)"
+Title:      "Procedencia de recursos"
+Description: "Perfil CORE de Procedencia de un recurso (Provenance)"
 
 * insert ProfileMeta
 * insert RuleSetStatus (0, draft, pc)

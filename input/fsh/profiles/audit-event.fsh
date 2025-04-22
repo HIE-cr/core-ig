@@ -14,8 +14,8 @@
 Profile:        AuditEventCrCore
 Parent:         AuditEvent
 Id:             audit-event-cr-core
-Title:          "Auditoría de Eventos (Core)"
-Description:    "Perfil de Auditoría de Eventos (AuditEvent)"
+Title:          "Auditoría de Eventos"
+Description:    "Perfil CORE de Auditoría de Eventos (AuditEvent)"
 
 * insert ProfileMeta
 * insert RuleSetStatus (0, draft, pc)

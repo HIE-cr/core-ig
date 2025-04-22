@@ -1,1 +1,0 @@
-Notas pendientes de definir

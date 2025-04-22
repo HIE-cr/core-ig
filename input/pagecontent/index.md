@@ -4,15 +4,15 @@ Tenga en cuenta que esta guía de implementación aún se encuentra en desarroll
 {:.draft-note}
 
 ### Introducción
+En el marco de la Estrategia Nacional de Salud Digital y en alineamiento con los esfuerzos de transformación digital del sistema de salud costarricense, se desarrolla la Guía de Implementación CORE HL7 Costa Rica como un componente clave para promover la interoperabilidad efectiva entre los sistemas de información en salud.
 
-Esta guía y los perfiles de CR Core se han convertido en la base de las guías de implementación de FHIR en el ámbito de Costa Rica. Esta versión refleja los cambios, comentarios y solicitudes de la comunidad de FHIR en el ámbito de Costa Ruca. CR Core se ha beneficiado de las pruebas y la orientación del equipos multisectorial a nivel nacional. Sus comentarios siguen sentando las bases para documentar el diseño, las interacciones, los requisitos y las directrices del Perfil de CR Core para el acceso a los datos de pacientes. Bajo la guía de los entes nacionales y regionales que tiene expertis en HL7 en el ámbito de Costa Rica, el contenido se ampliará en futuras versiones para satisfacer las necesidades específicas del ámbito de Costa Rica.
+Esta guía de implementación representa una adaptación nacional del estándar internacional HL7 FHIR®, orientada a facilitar el intercambio seguro, oportuno y confiable de datos clínicos y administrativos. Su implementación busca mejorar la calidad de la atención, la continuidad del cuidado y la toma de decisiones basada en información precisa y estructurada.
 
-La Guía de Implementación de CR Core se basa en la versión R5 de FHIR. Define las restricciones mínimas de los recursos de FHIR para crear los perfiles de CR Core. Se identifican los elementos, extensiones, vocabularios y conjuntos de valores que **DEBEN** estar presentes y se define su uso. También documenta las interacciones RESTful mínimas de FHIR para que cada perfil de CR Core acceda a los datos de los pacientes. El establecimiento de estándares mínimos para promover la interoperabilidad y la adopción mediante una implementación común permite una mayor evolución del desarrollo de estándares para casos de uso específicos. Existen dos maneras diferentes de implementar CR Core:
+El presente documento ofrece un conjunto de perfiles, extensiones y lineamientos técnicos que responden a las necesidades y particularidades del sistema de salud costarricense, promoviendo la estandarización en el desarrollo de soluciones interoperables tanto en el sector público como privado.
 
-1. Soporte solo para perfiles: los sistemas pueden admitir solo los perfiles principales de Costa Rica para representar información clínica.
-2. Soporte de perfil + Soporte de interacción: los sistemas pueden soportar tanto la estructura de contenido del perfil principal de Costa Rica como las interacciones RESTful definidas para un recurso.
+Este esfuerzo ha sido liderado por un equipo técnico y clínico designado por el [Comité Técnico de Salud Digital](https://www.ministeriodesalud.go.cr/index.php/biblioteca-de-archivos-left/documentos-ministerio-de-salud/ministerio-de-salud/salud-digital/hoja-de-ruta-salud-digital/6765-estrategia-nacional-de-salud-digital-de-costa-rica/file) y liderado por el Ministerio de Salud, en coordinación con instituciones del sector salud, actores técnicos, clínicos y representantes de la industria, bajo un enfoque colaborativo, abierto y evolutivo.
 
-Para obtener una descripción detallada de estos diferentes usos de CR Core, consulte la página de Requisitos de conformidad.
+Invitamos a los equipos de desarrollo, proveedores de soluciones tecnológicas, profesionales de salud y demás partes interesadas a utilizar, adaptar y contribuir a esta guía de implementación, como parte del compromiso conjunto por una salud más conectada, eficiente y centrada en las personas.
 
 ### Antecedente
 En Costa Rica, el ecosistema de salud está compuesto por múltiples actores, incluyendo la Caja Costarricense de Seguro Social (CCSS), el Ministerio de Salud, el Instituto Nacional de Seguros (INS), y diversos proveedores privados de servicios de salud. A pesar de los avances en digitalización, la fragmentación de los sistemas de información ha representado un obstáculo para la interoperabilidad efectiva entre instituciones, limitando el acceso oportuno a datos clínicos y administrativos, lo que impacta la continuidad del cuidado y la eficiencia operativa.
@@ -24,12 +24,12 @@ En este contexto, surge la necesidad de desarrollar la Guía de Implementación 
 ### Cómo leer esta guía
 Esta guía está dividida en varias páginas, que se enumeran en la parte superior de cada página en la barra de menú.
 
-- [Inicio](#): la página de inicio proporciona la introducción y los antecedentes de CR Core.
-- [Conformidad](#): estas páginas describen el conjunto de reglas para reclamar la conformidad con esta guía.
-- [Artefactos FHIR](#): estas páginas proporcionan descripciones detalladas y definiciones formales para todos los objetos FHIR definidos en esta guía
-- [Seguridad](#): Esta página documenta los requisitos generales de seguridad y recomendaciones para los actores.
-- [Descargas](#): esta página proporciona enlaces a los artefactos de CR Core.
-- [Registro de cambios](#): esta página proporciona un registro de cambios para la guía de implementación de CR Core.
+- [Inicio](index.html): la página de inicio proporciona la introducción y los antecedentes de CR Core.
+- [Artefactos FHIR](artifacts.html): estas páginas proporcionan descripciones detalladas y definiciones formales para todos los objetos FHIR definidos en esta guía
+- [Seguridad](security.html): esta página documenta los requisitos generales de seguridad y recomendaciones para los actores.
+- [Terminologías](terminology.html): esta opción documenta el uso de las diferentes terminologías en la guía de implementación.
+- [Descargas](download.html): esta página proporciona enlaces a los artefactos de CR Core.
+- [Registro de cambios](changes.html): esta página proporciona un registro de cambios para la guía de implementación de CR Core.
 
 ### Actores principales de Costa Rica
 Los siguientes actores forman parte del IG central de Costa Rica:
@@ -50,3 +50,20 @@ Para los sistemas que admiten la estructura de contenido del Perfil Core de Cost
 
 Consulte la especificación FHIR para obtener detalles sobre [la API de búsqueda RESTful de FHIR](https://hl7.org/fhir/R5/http.html#search) y el [lanzamiento de aplicaciones SMART](https://hl7.org/fhir/smart-app-launch/STU2/) para saber cómo una aplicación obtiene acceso a un registro de paciente.
 
+### Autores y Colaboradores
+
+| Rol         | Nombre                   | Organización                                           |
+| ----------- | ------------------------ | ------------------------------------------------------ |
+| Autor       | Ing. Alejandro Benavides | [Meddyg](#) - [Global Life-Centered Hub](#)            |
+| Autor       | Dr. Daniel Quesada       | [Ministerio de Salud](#)                               |
+| Autor       | Ing. Iván Rojas          | [EDUS](#) - [Caja Costarricense del Seguro Social](#)  |
+| Autor       | Dr. Eduardo Rodríguez    | [EDUS](#) - [Caja Costarricense del Seguro Social](#)  |
+| Autor       | Ing. Paul Fervoy         | [Siftia](#) - [CAMTIC](#)                              |
+| Colaborador | Ing. Manuel Rodriguez    | [EDUS](#) - [Caja Costarricense del Seguro Social](#)  |
+| Colaborador | Ing. Pedro Meckbel       | [Ministerio de Salud](#)                               |
+| Colaborador | Ing. Steve Vega          | [Huli](#) - [Cámara Costarricense de la Salud](#)      |
+| Colaborador | Dra. Desire Rojas        | [Instituto Nacional de Seguros](#)                     |
+| Colaborador | Ing. Jose Ricardo Zúñiga | [Ministerio de Salud](#)                               |
+| Colaborador | Ing. David Poveda        | [SAC](#) - [Cámara Costarricense de la Salud](#)       |
+| Colaborador | Ing. Antón Ilarionov     | [SAC](#) - [Cámara Costarricense de la Salud](#)       |
+| Colaborador | Ing. Deivert Guiltrichs  | [Ministerio de Salud](#)                               |

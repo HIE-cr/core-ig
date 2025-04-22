@@ -23,7 +23,9 @@ RuleSet:            CodeSystemMeta
 * ^version = "1.0.0"
 * ^status = #draft
 * ^experimental = true
-* ^caseSensitive = true
+* ^caseSensitive = false
+* ^compositional = false
+* ^versionNeeded = true
 * ^publisher = "Ministerio de Salud de Costa Rica"
 * ^date = "2025-03-03"
 * ^jurisdiction = urn:iso:std:iso:3166#CR "Costa Rica"

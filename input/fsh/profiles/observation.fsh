@@ -14,8 +14,8 @@
 Profile:    ObservationCrCore
 Parent:     Observation
 Id:         observation-cr-core
-Title:      "Observación (Core)"
-Description: "Perfil de Observación (Observation)"
+Title:      "Observación"
+Description: "Perfil CORE de Observación (Observation)"
 
 * insert ProfileMeta
 * insert RuleSetStatus (0, draft, pc)
@@ -27,17 +27,17 @@ Description: "Perfil de Observación (Observation)"
 * status MS
   * ^short = "registered|preliminary|final|amended|corrected|cancelled|entered-in-error|unknown"
   * ^definition = "Estado de la observación"
-* status from http://hl7.org/fhir/ValueSet/observation-status (required)
+* status from ObservationStatus (required)
   * ^binding.description = "Códigos provistos para el estado de una observación"
 
 * category MS
   * ^short = "Clasificación del tipo de observación"
-* category from http://hl7.org/fhir/ValueSet/observation-category (preferred)
+* category from ObservationCategoryCodes (preferred)
   * ^binding.description = "Códigos de alto nivel para la categoría de una observación"
 
 * code MS
   * ^short = "Tipo de observación (code/type)"
-* code from http://hl7.org/fhir/ValueSet/observation-codes (example)
+* code from LOINCCodes (example)
   * ^binding.description = "Códigos de identificación simple para el nombre de una observación"	
 
 * subject MS
@@ -62,7 +62,7 @@ Description: "Perfil de Observación (Observation)"
   * ^short = "Alta, baja, normal, etc"
   * ^definition = "Interpretación del valor de la observación"
 
-* interpretation from http://hl7.org/fhir/ValueSet/observation-interpretation (extensible)
+* interpretation from ObservationInterpretationCodes (extensible)
   * ^binding.description = "Códigos de identificación para la interpretación de la observación"
 
 * note MS
@@ -80,12 +80,12 @@ Description: "Perfil de Observación (Observation)"
   * ^short = "Componentes de los resultados"	
   * code MS
     * ^short = "Tipo de componente de la observación (code/type)"    
-  * code from http://hl7.org/fhir/ValueSet/observation-codes (example)
+  * code from LOINCCodes (example)
     * ^binding.description = "Códigos de identificación simple para el nombre de una observación"	
   * value[x] MS
     * ^short = "Actual Resultado del componente"
   * interpretation MS
     * ^short = "Alta, baja, normal, etc"
     * ^definition = "Interpretación del valor del componente de la observación"
-  * interpretation from http://hl7.org/fhir/ValueSet/observation-interpretation (extensible)
+  * interpretation from ObservationInterpretationCodes (extensible)
     * ^binding.description = "Códigos de identificación para la interpretación de la observación"

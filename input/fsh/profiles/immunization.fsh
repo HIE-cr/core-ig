@@ -14,8 +14,8 @@
 Profile:    ImmunizationCrCore
 Parent:     Immunization
 Id:         immunization-cr-core
-Title:      "Inmunización (Core)"
-Description: "Perfil de Registro de Inmunización (Immunization)"
+Title:      "Inmunización"
+Description: "Perfil CORE de Vacunas (Immunization)"
 
 * insert ProfileMeta
 * insert RuleSetStatus (0, draft, pc)
@@ -43,6 +43,7 @@ Description: "Perfil de Registro de Inmunización (Immunization)"
 * performer.actor ^definition = "Prestador personal u organizacional que realizó la acción"
 
 * vaccineCode MS
+* vaccineCode from VaccineCode (required)
 * vaccineCode ^short = "Vacuna que se administró o se iba a administrar"
 * vaccineCode ^definition = "Vacuna que se administró o se iba a administrar. Se proporciona valores que utilizan en el RNI (Registro Nacional de Inmunizaciones)"
 // TODO: Se require definir el ValueSet de vacunas
@@ -74,9 +75,9 @@ Description: "Perfil de Registro de Inmunización (Immunization)"
 * status from http://hl7.org/fhir/ValueSet/immunization-status (required)
 
 * statusReason  MS
-* statusReason from ImmunizationStatusReason (required)
+* statusReason from ImmunizationStatusReasonCodes (required)
 * statusReason ^short = "Razón de no realizarse la inmunización"
-* statusReason ^definition = "Indica la razón por la que no se realizó el evento de inmunización"
+* statusReason ^definition = "Indica la razón por la que no se realizó el evento de vacunación"
 // TODO: Se require definir el ValueSet de razones
   * text MS
     * ^short = "Descripción de la razón por la cual no se produjo la inmunización"

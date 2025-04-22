@@ -14,22 +14,22 @@
 Profile:    ConditionCrCore
 Parent:     Condition
 Id:         condition-cr-core
-Title:      "Condición (Core)"
-Description: "Perfil de Condiciones o Diagnósticos (Condition)"
+Title:      "Condición"
+Description: "Perfil CORE de Condiciones o Diagnósticos (Condition)"
 
 * insert ProfileMeta
 * insert RuleSetStatus (0, draft, pc)
 
 * clinicalStatus MS
 * clinicalStatus ^short = "El estatus en el cual se encuentra la condición: active| recurrece | relapse | inactive | remission | resolved"
-* clinicalStatus  from 	http://hl7.org/fhir/ValueSet/condition-clinical (required)
+* clinicalStatus  from 	ConditionClinicalStatusCodes (required)
 * clinicalStatus ^binding.description = "Códigos definidos por estándar"
 * clinicalStatus ^definition = "El estatus en el cual se encuentra la condición de un Paciente"
 
 * verificationStatus MS 
 * verificationStatus ^short = "Estado de verificación de la condición o diagnóstico: unconfirmed | provisional | differential | confirmed | refuted | entered-in-error"
 * verificationStatus ^definition = "Estado de verificación de la condición o Diagnóstico"
-* verificationStatus from http://hl7.org/fhir/ValueSet/condition-ver-status (required)
+* verificationStatus from ConditionVerificationStatus (required)
 * verificationStatus ^binding.description = "Códigos definidos por estándar"
 
 * subject MS
@@ -38,6 +38,7 @@ Description: "Perfil de Condiciones o Diagnósticos (Condition)"
 * subject only Reference(PatientCrCore)
 
 * code MS
+* code from ConditionProblemDiagnosisCodes (required)
 * code ^definition = "Identificación de la condición, el problema o el diagnóstico o registro del \"problema ausente\" o de los \"problemas desconocidos\"."
 // TODO: Se requiere un ValueSet para code de diagnositcos en SNOMED-CT
 * code ^short = "Códigos de SNOMED-CT y adicionales de ausente o desconocido"

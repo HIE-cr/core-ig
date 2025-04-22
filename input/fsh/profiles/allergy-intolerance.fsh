@@ -15,8 +15,8 @@
 Profile:        AllergyIntoleranceCrCore
 Parent:         AllergyIntolerance
 Id:             allergy-intolerance-cr-core
-Title:          "Alergias e Intolerancias (Core)"
-Description:    "Perfil de Alergias e Intolerancias (AllergyIntolerance)"
+Title:          "Alergias e Intolerancias"
+Description:    "Perfil CORE de Alergias e Intolerancias (AllergyIntolerance)"
 
 * insert ProfileMeta
 * insert RuleSetStatus (0, draft, pc)
@@ -43,7 +43,7 @@ Description:    "Perfil de Alergias e Intolerancias (AllergyIntolerance)"
   * ^definition = "Gravedad de la reacción."
 
 * code 1.. MS
-* code from AllergyIntoleranceCode (required)
+* code from SubstanceProductAndConditionAndNegationCodes (required)
   * ^short = "Código SNOMED-CT de la alergia o intolerancia."
   * ^definition = "Código SNOMED-CT de la alergia o intolerancia."
 
@@ -63,9 +63,9 @@ Description:    "Perfil de Alergias e Intolerancias (AllergyIntolerance)"
   * manifestation MS
     * ^short = "Manifestación clínica y sintomas del evento adverso"
     * ^definition = "Manifestación clínica y sintomas del evento adverso"
-  * manifestation from ClinicalFindings (required)
+  * manifestation from SNOMEDCTClinicalFindings (required)
 
   * severity MS
     * ^short = "mild | severe"
     * ^definition = "Gravedad de la reacción."
-  * severity from ReactionSeverityEvent (required)
+  * severity from AllergyIntoleranceSeverity (required)

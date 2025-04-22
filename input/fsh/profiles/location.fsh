@@ -14,8 +14,8 @@
 Profile:    LocationCrCore
 Parent:     Location
 Id:         location-cr-core
-Title:      "Ubicación (Core)"
-Description: "Perfil de Ubicación (Location)"
+Title:      "Ubicación de eventos"
+Description: "Perfil CORE de Ubicación (Location)"
 
 * insert ProfileMeta
 * insert RuleSetStatus (0, draft, pc)

@@ -14,8 +14,8 @@
 Profile:    EncounterCrCore
 Parent:     Encounter
 Id:         encounter-cr-core
-Title:      "Encuentro Clínico (Core)"
-Description: "Perfil de Encuentro Clínico (Encounter)"
+Title:      "Encuentro Clínico"
+Description: "Perfil CORE de Encuentro Clínico (Encounter)"
 
 * insert ProfileMeta
 * insert RuleSetStatus (0, draft, pc)
@@ -27,13 +27,13 @@ Description: "Perfil de Encuentro Clínico (Encounter)"
 * status MS
   * ^short = "planned | arrived | triaged | in-progress | onleave | finished | cancelled"
   * ^definition = "Determina el estado del encuentro remoto conforme a los códigos definidos por el estándar" 
-* status from http://hl7.org/fhir/ValueSet/encounter-status (required)
+* status from EncounterStatus (required)
   * ^binding.description = "Códigos requeridos por FHIR"
 
 * class MS
 * class ^short = "Clasificación del encuentro con el paciente"
 * class ^definition = "Clasificación del encuentro con el paciente"
-* class from http://terminology.hl7.org/ValueSet/encounter-class (extensible)
+* class from EncounterClass (extensible)
 
 * type MS
   * ^short = "Tipo específico de Encuentro"
@@ -61,7 +61,7 @@ Description: "Perfil de Encuentro Clínico (Encounter)"
 * participant MS
 * participant ^short = "Participantes involucrados en el encuentro sin considerar al paciente"
   * type MS
-  * type from http://hl7.org/fhir/ValueSet/encounter-participant-type (extensible)
+  * type from ParticipantType (extensible)
   * type ^short = "Rol del participante en el encuentro"
 
   * actor 1..1 MS

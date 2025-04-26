@@ -24,12 +24,25 @@ date: 2025-03-03
 copyright: >-
   Utilizado con permiso de HL7 International, todos los derechos reservados Licencia Creative Commons
 releaseLabel: ci-build
-license: CC0-1.0
+#releaseLabel: ballot
+#releaseLabel: trial-use
+#releaseLabel: release
+license: CC-BY-4.0
 jurisdiction: urn:iso:std:iso:3166#CR "Costa Rica"
 publisher:
   name: Ministerio de Salud de Costa Rica
   url: https://ministeriodesalud.go.cr/fhir
   email: alejandro@meddyg.com
+
+# Those who need more control or want to add additional details to the contact values can use
+# contact directly and follow the format outlined in the ImplementationGuide resource and
+# ContactDetail.
+contact:
+  - name: IHE Costa Rica
+    telecom:
+      - system: email # phone | fax | email | pager | url | sms | other
+        value: alejandro@meddyg.com
+        use: work
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced
@@ -73,6 +86,8 @@ pages:
     title: Descargas
   changes.md:
     title: Cambios
+  credits.md:
+    title: Créditos
 #
 #
 # The parameters property represents IG.definition.parameter. Rather
@@ -103,22 +118,14 @@ menu:
   Terminologias: terminology.html
   Descargas: download.html
   Cambios: changes.html
+  Créditos: credits.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
 # │  resource. These properties are less commonly needed than those above.                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 #
-# Those who need more control or want to add additional details to the contact values can use
-# contact directly and follow the format outlined in the ImplementationGuide resource and
-# ContactDetail.
-#
-# contact:
-#   - name: Bob Smith
-#     telecom:
-#       - system: email # phone | fax | email | pager | url | sms | other
-#         value: bobsmith@example.org
-#         use: work
+
 #
 #
 # The global property corresponds to the IG.global property, but it

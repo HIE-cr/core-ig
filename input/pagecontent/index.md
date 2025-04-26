@@ -34,11 +34,11 @@ Esta guía está dividida en varias páginas, que se enumeran en la parte superi
 ### Actores principales de Costa Rica
 Los siguientes actores forman parte del IG central de Costa Rica:
 
-#### Solicitante
-Es una aplicación que inicia una solicitud de acceso a datos para recuperar datos de pacientes. El solicitante del CR Core es el cliente en una interacción cliente-servidor. Los términos "Solicitante del CR Core" y "Cliente" se utilizan indistintamente a lo largo de esta guía y no pretenden limitar este actor únicamente a las aplicaciones de pacientes y proveedores. Por ejemplo, los pagadores y otros usuarios pueden usar la misma tecnología. Estos términos son una abreviatura de "aplicación de usuario".
+#### Cliente
+Es una aplicación que inicia una solicitud de acceso a datos para recuperar datos de pacientes. El Cliente del CR Core es el cliente en una interacción cliente-servidor. Los términos "Cliente del CR Core" y "Cliente" se utilizan indistintamente a lo largo de esta guía y no pretenden limitar este actor únicamente a las aplicaciones de pacientes y proveedores. Por ejemplo, los pagadores y otros usuarios pueden usar la misma tecnología. Estos términos son una abreviatura de "aplicación de usuario".
 
-#### Proveedor de respuesta
-Es un sistema que responde a la solicitud de acceso a datos, proporcionando datos del paciente. El Proveedor de respuesta del CR Core es el servidor en una interacción cliente-servidor. Los términos "Proveedor de respuesta del CR Core", "Servidor" y "HCE" se utilizan indistintamente a lo largo de esta guía y no pretenden limitar este actor a los sistemas de registros médicos electrónicos. Por ejemplo, los HIE, las plataformas de coordinación de la atención, los sistemas de salud poblacional, etc., pueden utilizar la misma tecnología. Estos términos son una abreviatura de "plataforma de atención médica interoperable".
+#### Servidor
+Es un sistema que responde a la solicitud de acceso a datos, proporcionando datos del paciente. El Servidor del CR Core es un actor en una interacción cliente-servidor. Los términos "Servidor del CR Core", "HCE" se utilizan indistintamente a lo largo de esta guía y no pretenden limitar este actor a los sistemas de registros médicos electrónicos. Por ejemplo, los HIE, las plataformas de coordinación de la atención, los sistemas de salud poblacional, etc., pueden utilizar la misma tecnología. Estos términos son una abreviatura de "plataforma de atención médica interoperable".
 
 ### Interacciones RESTful del CR Core FHIR
 Para los sistemas que admiten la estructura de contenido del Perfil Core de Costa Rica y las interacciones RESTful definidas para un recurso, los requisitos se definen formalmente en las Declaraciones de Capacidad del CR Core. Además, cada página de perfil incluye una sección de inicio rápido que documenta las operaciones de búsqueda y lectura RESTful de FHIR requeridas. Estas secciones muestran cómo acceder a los datos clínicos y administrativos de un paciente:
@@ -54,16 +54,17 @@ Consulte la especificación FHIR para obtener detalles sobre [la API de búsqued
 
 | Rol         | Nombre                   | Organización                                           |
 | ----------- | ------------------------ | ------------------------------------------------------ |
-| Autor       | Ing. Alejandro Benavides | [Meddyg](#) - [Global Life-Centered Hub](#)            |
-| Autor       | Dr. Daniel Quesada       | [Ministerio de Salud](#)                               |
-| Autor       | Ing. Iván Rojas          | [EDUS](#) - [Caja Costarricense del Seguro Social](#)  |
-| Autor       | Dr. Eduardo Rodríguez    | [EDUS](#) - [Caja Costarricense del Seguro Social](#)  |
-| Autor       | Ing. Paul Fervoy         | [Siftia](#) - [CAMTIC](#)                              |
-| Colaborador | Ing. Manuel Rodriguez    | [EDUS](#) - [Caja Costarricense del Seguro Social](#)  |
-| Colaborador | Ing. Pedro Meckbel       | [Ministerio de Salud](#)                               |
-| Colaborador | Ing. Steve Vega          | [Huli](#) - [Cámara Costarricense de la Salud](#)      |
-| Colaborador | Dra. Desire Rojas        | [Instituto Nacional de Seguros](#)                     |
-| Colaborador | Ing. Jose Ricardo Zúñiga | [Ministerio de Salud](#)                               |
-| Colaborador | Ing. David Poveda        | [SAC](#) - [Cámara Costarricense de la Salud](#)       |
-| Colaborador | Ing. Antón Ilarionov     | [SAC](#) - [Cámara Costarricense de la Salud](#)       |
-| Colaborador | Ing. Deivert Guiltrichs  | [Ministerio de Salud](#)                               |
+| Autor       | Ing. Alejandro Benavides | [Meddyg](https://meddyg.com/) - [Global Life-Centered Hub](#)            |
+| Autor       | Dr. Daniel Quesada       | [Ministerio de Salud](https://ministeriodesalud.go.cr/)                               |
+| Autor       | Ing. Iván Rojas          | [EDUS](https://www.ccss.sa.cr/appedus/) - [Caja Costarricense del Seguro Social](#)  |
+| Autor       | Dr. Eduardo Rodríguez    | [EDUS](https://www.ccss.sa.cr/appedus/) - [Caja Costarricense del Seguro Social](#)  |
+| Autor       | Ing. Paul Fervoy         | [Siftia](https://siftia.tech/es/) - [CAMTIC](#)                              |
+| Colaborador | Ing. Manuel Rodriguez    | [EDUS](https://www.ccss.sa.cr/appedus/) - [Caja Costarricense del Seguro Social](#)  |
+| Colaborador | Ing. Pedro Meckbel       | [Ministerio de Salud](https://ministeriodesalud.go.cr/)                               |
+| Colaborador | Ing. Steve Vega          | [Huli](https://huli.io/) - [Cámara Costarricense de la Salud](#)      |
+| Colaborador | Dra. Desire Rojas        | [Instituto Nacional de Seguros](https://www.grupoins.com/)                     |
+| Colaborador | Ing. Jose Ricardo Zúñiga | [Ministerio de Salud](https://ministeriodesalud.go.cr/)                               |
+| Colaborador | Ing. David Poveda        | [SAC](https://www.saludaunclick.com/) - [Cámara Costarricense de la Salud](#)       |
+| Colaborador | MSc. Antón Ilarionov     | [SAC](https://www.saludaunclick.com/) - [Cámara Costarricense de la Salud](#)       |
+| Colaborador | Ing. Deivert Guiltrichs  | [Ministerio de Salud](https://ministeriodesalud.go.cr/)                               |
+| Revisor     | Ing. César Galindo       | [HL7 Chile](https://hl7chile.cl/)                                         |

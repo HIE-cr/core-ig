@@ -22,13 +22,14 @@ Description:    "Perfil CORE de Alergias e Intolerancias (AllergyIntolerance)"
 * insert RuleSetStatus (0, draft, pc)
 
 * clinicalStatus MS
-* clinicalStatus from http://hl7.org/fhir/ValueSet/allergyintolerance-clinical (required)
+* clinicalStatus from AllergyIntoleranceClinicalStatusCodes (required)
   * ^short = "active | inactive | resolved"
   * ^definition = "Estado clínico de la alergia o intolerancia."
 
-* verificationStatus from http://hl7.org/fhir/ValueSet/allergyintolerance-verification (required)
+* verificationStatus from AllergyIntoleranceVerificationStatus (required)
 
 * type MS
+* type from AllergyIntoleranceType (required)
   * ^short = "allergy | intolerance"
   * ^definition = "Tipo de reacción: alergia o intolerancia."
 

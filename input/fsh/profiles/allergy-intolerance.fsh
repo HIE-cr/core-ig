@@ -53,8 +53,9 @@ Description:    "Perfil CORE de Alergias e Intolerancias (AllergyIntolerance)"
   * ^definition = "Paciente al que se le asocia la alergia o intolerancia."
 
 * onset[x] MS
-  * ^short = "Fecha de inicio de la alergia o intolerancia."
-  * ^definition = "Fecha de inicio de la alergia o intolerancia."
+* onset[x] only dateTime
+  * ^short = "Fecha y hora de inicio de la alergia o intolerancia."
+  * ^definition = "Fecha y hora de inicio de la alergia o intolerancia."
 
 * reaction MS
   * ^short = "Reacción asociada a la alergia o intolerancia."

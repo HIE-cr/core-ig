@@ -32,11 +32,17 @@ Description:    "Perfil CORE de Alergias e Intolerancias (AllergyIntolerance)"
   * ^short = "allergy | intolerance"
   * ^definition = "Tipo de reacción: alergia o intolerancia."
 
+/*
+ * @url: https://build.fhir.org/codesystem-allergy-intolerance-category.html
+ */
 * category MS
 * category from AllergyIntoleranceCategory (required)
   * ^short = "food | medication | environment | biologic | vaccine"
   * ^definition = "Categoría de la alergia o intolerancia."
 
+/*
+ * @url: https://build.fhir.org/codesystem-allergy-intolerance-criticality.html
+ */
 * criticality MS
 * criticality from AllergyIntoleranceCriticality (required)
   * ^short = "low | high | unable-to-assess"

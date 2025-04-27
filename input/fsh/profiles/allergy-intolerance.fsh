@@ -42,10 +42,12 @@ Description:    "Perfil CORE de Alergias e Intolerancias (AllergyIntolerance)"
   * ^short = "low | high | unable-to-assess"
   * ^definition = "Gravedad de la reacción."
 
+// TODO: Es necesario señalar los códigos exactoso de las alergias e intolerancias
+// FIXME: Costa Rica aún no tiene la licencia para usar los códigos de SNOMED-CT
 * code 1.. MS
-* code from SubstanceProductAndConditionAndNegationCodes (required)
-  * ^short = "Código SNOMED-CT de la alergia o intolerancia."
-  * ^definition = "Código SNOMED-CT de la alergia o intolerancia."
+* code from AllergyIntoleranceICD10Extended (required)
+  * ^short = "Código ICD-10 de la alergia o intolerancia."
+  * ^definition = "Código ICD-10 de la alergia o intolerancia."
 
 * patient MS
 * patient only Reference(PatientCrCore)

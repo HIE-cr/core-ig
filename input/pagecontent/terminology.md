@@ -9,7 +9,7 @@ Más información sobre [Terminologías externas](https://confluence.hl7.org/dis
 
 SNOMED CT es una terminología básica de atención médica clínica que contiene conceptos con significados únicos y definiciones basadas en lógica formal organizadas en jerarquías. La edición internacional incluye el contenido fundamental de SNOMED CT del cual todos los demás módulos de SNOMED CT deben tener dependencias.
 
-SNOMED International identifica actualmente el |módulo central de SNOMED CT (concepto central de metadatos)| como módulo de enfoque para la edición internacional. Sólo el |módulo de componentes del modelo SNOMED CT| se especifica actualmente como una dependencia. La Edición Internacional puede complementarse con extensiones, mantenidas y distribuidas por Miembros y Afiliados, para cumplir con requisitos adicionales nacionales, locales y organizacionales.
+SNOMED International identifica actualmente el módulo central de SNOMED CT (concepto central de metadatos) como módulo de enfoque para la edición internacional. Sólo el módulo de componentes del modelo SNOMED CT se especifica actualmente como una dependencia. La Edición Internacional puede complementarse con extensiones, mantenidas y distribuidas por Miembros y Afiliados, para cumplir con requisitos adicionales nacionales, locales y organizacionales.
 
 Más info en:
 
@@ -37,4 +37,5 @@ LOINC (Logical Observation Identifiers Names and Codes) es un sistema de codific
 
 Más info en: [https://confluence.hl7.org/display/TA/Logical+Observation+Identifiers+Names+and+Codes+%28LOINC%29](https://confluence.hl7.org/display/TA/Logical+Observation+Identifiers+Names+and+Codes+%28LOINC%29)
 [https://loinc.org/](https://loinc.org/)
+
 Canonical URI: [http://loinc.org](http://loinc.org)

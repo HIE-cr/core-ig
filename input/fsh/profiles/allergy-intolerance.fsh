@@ -33,7 +33,7 @@ Description:    "Perfil CORE de Alergias e Intolerancias (AllergyIntolerance)"
   * ^definition = "Tipo de reacción: alergia o intolerancia."
 
 /*
- * @url: https://build.fhir.org/codesystem-allergy-intolerance-category.html
+ * @url: http://hl7.org/fhir/ValueSet/allergy-intolerance-category
  */
 * category MS
 * category from AllergyIntoleranceCategory (required)
@@ -41,7 +41,7 @@ Description:    "Perfil CORE de Alergias e Intolerancias (AllergyIntolerance)"
   * ^definition = "Categoría de la alergia o intolerancia."
 
 /*
- * @url: https://build.fhir.org/codesystem-allergy-intolerance-criticality.html
+ * @url: http://hl7.org/fhir/ValueSet/allergy-intolerance-criticality
  */
 * criticality MS
 * criticality from AllergyIntoleranceCriticality (required)

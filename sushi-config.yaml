@@ -80,6 +80,8 @@ pages:
     title: Inicio
   security.md:
     title: Seguridad
+  digital-signature.md:
+    title: Firma Digital
   terminology.md:
     title: Terminologias
   download.md:
@@ -114,6 +116,7 @@ parameters:
 menu:
   Inicio: index.html
   Seguridad: security.html
+  Firma Digital: digital-signature.html
   Artefactos: artifacts.html
   Terminologias: terminology.html
   Descargas: download.html

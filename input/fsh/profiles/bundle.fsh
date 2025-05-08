@@ -15,7 +15,7 @@ Profile:        BundleCrCore
 Parent:         Bundle
 Id:             bundle-cr-core
 Title:          "Paquete de Recursos"
-Description:    "Perfil CORE de Paquete de Recursos (Bundle)"
+Description:    "Perfil CORE de Paquete de Recursos (Bundle) con soporte para firma digital GAUDI"
 
 * insert ProfileMeta
 * insert RuleSetStatus (0, draft, pc)
@@ -31,3 +31,22 @@ Description:    "Perfil CORE de Paquete de Recursos (Bundle)"
 * entry MS
 * entry ^short = "Entradas del paquete"
 * entry ^definition = "Entradas del paquete"
+
+* signature 1..1 MS
+* signature ^short = "Firma digital del paquete"
+* signature ^definition = "Firma digital del paquete"
+  * type 1..1 MS
+  * type from SignatureTypeCodes (required)
+  * type ^short = "Tipo de firma"
+  * type ^definition = "Tipo de firma"
+
+  * who 1..1 MS
+  * who only Reference(PractitionerRoleCrCore or OrganizationCrCore)
+  * who ^short = "Quien firma el paquete"
+  * who ^definition = "Quien firma el paquete"
+
+  * data 1..1 MS
+  * data only base64Binary
+  * data ^short = "Firma digital GAUDI en base64"
+  * data ^definition = "Firma digital GAUDI en base64"
+

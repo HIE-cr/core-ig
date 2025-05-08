@@ -36,3 +36,4 @@ Usage:          #example
 * organization = Reference(OrganizacionCCSS)
 
 * specialty = PractitionerCode#267
+* extension[authorizedSigner].valueBoolean = true

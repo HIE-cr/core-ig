@@ -28,6 +28,8 @@ Description:        "Perfil CORE de Rol de Profesional de la Salud (Practitioner
 * insert ProfileMeta
 * insert RuleSetStatus (0, draft, pc)
 
+* extension contains AuthorizedSignerExt named authorizedSigner 0..1
+
 /*
  @element: code
  @concetp: Código de identificación del rol del profesional de la salud
@@ -74,3 +76,15 @@ Description:        "Perfil CORE de Rol de Profesional de la Salud (Practitioner
 * specialty 0..*
 * specialty ^short = "Especialidad del profesional de la salud."
 * specialty ^definition = "Especialidad del profesional de la salud."
+
+/*
+    @element: authorizedSigner
+    @concetp: ¿El profesional de la salud puede firmar?
+    @type:    boolean
+    @purpose: ¿El profesional de la salud puede firmar?
+    @comment: - No todos los medicos pueden firmar
+ */
+// * authorizedSigner 0..1
+// * authorizedSigner only boolean
+// * authorizedSigner ^short = "¿El profesional de la salud puede firmar digitalmente?"
+// * authorizedSigner ^definition = "¿El profesional de la salud puede firmar digitalmente?"

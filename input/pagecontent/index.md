@@ -59,6 +59,7 @@ Consulte la especificación FHIR para obtener detalles sobre [la API de búsqued
 | Autor       | Ing. Iván Rojas          | [EDUS](https://www.ccss.sa.cr/appedus/) - [Caja Costarricense del Seguro Social](#)  |
 | Autor       | Dr. Eduardo Rodríguez    | [EDUS](https://www.ccss.sa.cr/appedus/) - [Caja Costarricense del Seguro Social](#)  |
 | Autor       | Ing. Paul Fervoy         | [Siftia](https://siftia.tech/es/) - [CAMTIC](#)                              |
+| Autor       | Dra. Lucía Carnajal      | [Siftia](https://siftia.tech/es/) - [CAMTIC](#)                              |
 | Colaborador | Ing. Manuel Rodriguez    | [EDUS](https://www.ccss.sa.cr/appedus/) - [Caja Costarricense del Seguro Social](#)  |
 | Colaborador | Ing. Pedro Meckbel       | [Ministerio de Salud](https://ministeriodesalud.go.cr/)                               |
 | Colaborador | Ing. Steve Vega          | [Huli](https://huli.io/) - [Cámara Costarricense de la Salud](#)      |

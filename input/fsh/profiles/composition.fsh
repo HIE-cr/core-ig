@@ -15,7 +15,7 @@ Profile:    CompositionCrCore
 Parent:     Composition
 Id:         composition-cr-core
 Title:      "Documento Clínico"
-Description: "Perfil CODE del Documento Clínico (Composition)"
+Description: "Perfil CORE del Documento Clínico (Composition)"
 
 * insert ProfileMeta
 * insert RuleSetStatus (0, draft, pc)

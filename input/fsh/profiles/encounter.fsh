@@ -30,31 +30,37 @@ Description: "Perfil CORE de Encuentro Clínico (Encounter)"
 * status from EncounterStatus (required)
   * ^binding.description = "Códigos requeridos por FHIR"
 
-* class MS
+* class 0..1
 * class ^short = "Clasificación del encuentro con el paciente"
 * class ^definition = "Clasificación del encuentro con el paciente"
 * class from EncounterClass (extensible)
 
-* type MS
+* type 0..1
   * ^short = "Tipo específico de Encuentro"
   * ^definition = "Específica el tipo de encuentro" 
 // TODO: Se requiere un ValueSet para type
 
-* serviceType MS
+* serviceType 0..1
   * ^short = "Tipo de servicio que se realiza en el Encuentro"
   * ^definition = "Categorización del servicio que se va a prestar en el encuentro (por ejemplo, servicio de Ginecología)"
 // TODO: Se requiere un ValueSet para serviceType
 
-* reason.value MS
+* reason 0..* 
+  * ^short = "Razón del Encuentro"
+  * ^definition = "Razón por la que se realiza el encuentro, puede ser un diagnóstico o un procedimiento"
+  * ^binding.valueSet = "http://hl7.org/fhir/ValueSet/encounter-reason"
+  * ^binding.strength = #required
+* reason.value 
   * ^short = "Razón codificada por la que tiene lugar el Encuentro"
   * ^definition = "Razón codificada por la que tiene lugar el Encuentro"
+* reason.value only CodeableReference(ConditionCrCore or ObservationCrCore)
 
 * subject MS
 * subject only Reference(PatientCrCore)
   * ^short = "Referencia al paciente del encuentro"
   * ^definition = "La referencia al paciente que está presente en el encuentro clínico sobre un paciente nacional."
 
-* appointment 0..1 MS
+* appointment 0..1 
   * ^short = "Reserva de un evento de atención médica entre paciente(s), profesional(es), persona(s) relacionada(s) y/o dispositivo(s)" 
   * ^definition = "Cita o agendamiento médico, la cual es resultado de un encuentro"
 
@@ -68,11 +74,16 @@ Description: "Perfil CORE de Encuentro Clínico (Encounter)"
   * actor ^short = "Referencia al participante"
   * actor  only Reference(PractitionerCrCore or PractitionerRoleCrCore)
 
-* diagnosis 0..* MS
+* diagnosis 0..* 
   * ^short = "Diagnóstico relevante para este encuentro"
   * ^definition = "Diagnóstico relevante para este encuentro"
 * diagnosis.condition ^short = "El diagnóstico o procedimiento relevante para el encuentro"
 * diagnosis.condition only CodeableReference(ConditionCrCore)
+* diagnosis.use 0..1
+  * ^short = "Papel que este diagnóstico tiene dentro del encuentro (p.ej. ingreso, facturación, alta…)"
+  * ^definition = "Papel que este diagnóstico tiene dentro del encuentro (p.ej. ingreso, facturación, alta…)"
+  * ^binding.valueSet = "http://hl7.org/fhir/ValueSet/diagnosis-role"
+  * ^binding.strength = #required
 
 * serviceProvider MS
 * serviceProvider ^short = "La organización (instalación) responsable de este encuentro"

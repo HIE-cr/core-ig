@@ -28,7 +28,7 @@ Usage:          #example
 * id = "Organizacion-CCSS-01"
 
 * identifier.use = #official
-* identifier.system = "https://atv.hacienda.go.cr/ATV/frmConsultaSituTributaria.aspx"
+* identifier.system = "https://hie.cr/mpi"
 * identifier.value = "4000042147"
 * identifier.type.coding.system = Canonical(IdentifierDomain)
 * identifier.type.coding.code = #JURIDICA

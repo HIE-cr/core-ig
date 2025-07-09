@@ -29,7 +29,7 @@ Usage:          #example
 * id = "pacienteNacional01"
 
 * identifier.use = #official
-* identifier.system = "https://servicioselectorales.tse.go.cr/chc/resultado_persona.aspx"
+* identifier.system = "https://hie.cr/mpi"
 * identifier.value = "112345678"
 * identifier.type.coding.system = Canonical(IdentifierDomain)
 * identifier.type.coding.code = #CEDULA

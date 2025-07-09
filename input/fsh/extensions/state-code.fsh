@@ -4,6 +4,8 @@ Title:          "ZipCode de la provincia"
 Description:    "Extensión para el código de la provincia basado en el ZipCode de Costa Rica"
 Context:        Address.state
 
+* ^experimental = true
+
 * value[x] only CodeableConcept
 * value[x] ^short = "Código de la provincia basado en el ZipCode de Costa Rica"
 

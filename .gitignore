@@ -6,3 +6,4 @@ temp
 .devcontainer
 _preprocessed
 sushi-config.yaml.bak
+**/*.fs_

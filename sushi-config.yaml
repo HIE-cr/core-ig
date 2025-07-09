@@ -29,10 +29,12 @@ releaseLabel: ci-build
 #releaseLabel: release
 license: CC-BY-4.0
 jurisdiction: urn:iso:std:iso:3166#CR "Costa Rica"
+
 publisher:
   name: Ministerio de Salud de Costa Rica
   url: https://ministeriodesalud.go.cr/fhir
   email: alejandro@meddyg.com
+language: es
 
 # Those who need more control or want to add additional details to the contact values can use
 # contact directly and follow the format outlined in the ImplementationGuide resource and
@@ -48,7 +50,8 @@ contact:
 # package id and the value is the version (or dev/current). For advanced
 # use cases, the value can be an object with keys for id, uri, and version.
 #
-# dependencies:
+dependencies:
+  hl7.fhir.r5.core: 5.0.0
 #   hl7.fhir.us.core: 3.1.0
 #   hl7.fhir.us.mcode:
 #     id: mcode
@@ -103,7 +106,8 @@ pages:
 #
 parameters:
   excludettl: true
-#   validation: [allow-any-extensions, no-broken-links]
+  excludexml: true
+  # validation: [allow-any-extensions, no-broken-links]
 #
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │ The menu property will be used to generate the input/menu.xml file. The menu is represented    │

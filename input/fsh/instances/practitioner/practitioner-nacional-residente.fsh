@@ -29,7 +29,7 @@ Usage:          #example
 * id = "profesionalSaludResidente01"
 
 * identifier.use = #official
-* identifier.system = "https://migracion.go.cr/dimex"
+* identifier.system = "https://hie.cr/mpi"
 * identifier.value = "123456789012"
 * identifier.type.coding.system = Canonical(IdentifierDomain)
 * identifier.type.coding.code = #DIMEX

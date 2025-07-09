@@ -1,0 +1,25 @@
+{
+  "name": "hl7.fhir.cr.core",
+  "version": "0.1.0-draft",
+  "type": "fhir.ig",
+  "license": "CC-BY-4.0",
+  "canonical": "https://ministeriodesalud.go.cr/fhir/core",
+  "url": "https://ministeriodesalud.go.cr/fhir/core/ImplementationGuide/hl7.fhir.cr.core",
+  "title": "Guías de Implementación HL7 FHIR: CR Core",
+  "description": "Esta IG define los perfiles de recursos y extensiones de CR Core.",
+  "fhirVersion": [
+    "5.0.0"
+  ],
+  "dependencies": {
+    "hl7.terminology": "5.3.0"
+  },
+  "jurisdiction": "urn:iso:std:iso:3166#CR",
+  "author": "Ministerio de Salud de Costa Rica",
+  "maintainers": [
+    {
+      "name": "Alejandro Benavides",
+      "email": "alejandro@meddyg.com",
+      "url": "https://meddyg.com"
+    }
+  ]
+}

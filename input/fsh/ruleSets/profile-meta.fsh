@@ -25,7 +25,7 @@ RuleSet:            ProfileMeta
 * ^experimental = true
 * ^publisher = "Ministerio de Salud de Costa Rica"
 * ^date = "2025-03-03"
-// * ^jurisdiction = urn:iso:std:iso:3166#CR "Costa Rica"
+
 * ^contact.name = "Ministerio de Salud de Costa Rica"
 * ^contact.telecom[0].system = #url
 * ^contact.telecom[=].value = "http://www.ministeriodesalud.go.cr"

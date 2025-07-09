@@ -28,7 +28,7 @@ Usage:          #example
 * id = "Organizacion-Hospital-Privado-03"
 
 * identifier.use = #official
-* identifier.system = "https://atv.hacienda.go.cr/ATV/frmConsultaSituTributaria.aspx"
+* identifier.system = "https://hacienda.go.cr/facility"
 * identifier.value = "3101176555"
 * identifier.type.coding.system = Canonical(IdentifierDomain)
 * identifier.type.coding.code = #JURIDICA

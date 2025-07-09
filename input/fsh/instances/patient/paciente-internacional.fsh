@@ -29,7 +29,7 @@ Usage:          #example
 * id = "pacienteExtranjero02"
 
 * identifier.use = #official
-* identifier.system = "https://migracion.go.cr/pasaporte"
+* identifier.system = "https://hie.cr/mpi"
 * identifier.value = "JX123456"
 * identifier.type.coding.system = Canonical(IdentifierDomain)
 * identifier.type.coding.code = #PASAPORTE

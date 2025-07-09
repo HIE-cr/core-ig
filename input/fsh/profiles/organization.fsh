@@ -27,10 +27,11 @@ Description:        "Perfil CORE de Organizaciones (Organization)"
 * insert ProfileMeta
 * insert RuleSetStatus (0, draft, pc)
 
-// Definir la regla de slicing
-* type ^slicing.discriminator.type = #pattern
-* type ^slicing.discriminator.path = "$this"
-* type ^slicing.rules = #open
+
+// Definir la regla de slicing para el elemento identifier
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #open
 
 /*
   @element: identifier

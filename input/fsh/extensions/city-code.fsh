@@ -1,11 +1,13 @@
 Extension:      CityCodeExt
 Id:             CityCodeExt
 Title:          "ZipCode del cantón"
-Description:    "Extensión para el código de el cantón basado en el ZipCode de Costa Rica"
+Description:    "Extensión para el código del cantón basado en el ZipCode de Costa Rica"
 Context:        Address.city
 
+* ^experimental = true
+
 * value[x] only CodeableConcept
-* value[x] ^short = "Código de el cantón basado en el ZipCode de Costa Rica"
+* value[x] ^short = "Código del cantón basado en el ZipCode de Costa Rica"
 
 * valueCodeableConcept from CityList
 * valueCodeableConcept.coding 0..1 MS

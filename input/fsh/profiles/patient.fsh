@@ -35,6 +35,7 @@ Description:        "Perfil CORE de Paciente (Patient)"
  @comment: - Se espera que el paciente tenga al menos un identificador
  */
 
+// TODO: Qué pasa en caso de que el paciente no tenga identificador?
 * identifier 1.. MS
 * identifier ^short = "Lista de los identificadores del Paciente."
 * identifier ^definition = "Este es el listado de Identificaciones de un paciente"

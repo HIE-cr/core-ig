@@ -3,6 +3,9 @@ Id:               organization-service-type
 Title:            "Tipo de Servicios de salud"
 Description:      "Indica uno o más tipos de servicios que brinda la organización en salud en Costa Rica."
 Context:          Organization
+
+* ^experimental = true
+
 * value[x] only CodeableConcept
 * valueCodeableConcept from OrganizationActivityList (required)
 * valueCodeableConcept.coding 0..1 MS

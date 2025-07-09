@@ -20,6 +20,11 @@ Description:    "Perfil CORE de Paquete de Recursos (Bundle) con soporte para fi
 * insert ProfileMeta
 * insert RuleSetStatus (0, draft, pc)
 
+* meta.security 0..1 MS
+* meta.security from SecurityLabel
+* meta.security ^short = "Etiqueta de seguridad"
+* meta.security ^definition = "Etiqueta de seguridad"
+
 * type MS
 * type ^short = "Tipo de recurso"
 * type ^definition = "Tipo de recurso"

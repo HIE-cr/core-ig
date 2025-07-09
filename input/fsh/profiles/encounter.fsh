@@ -30,7 +30,7 @@ Description: "Perfil CORE de Encuentro Clínico (Encounter)"
 * status from EncounterStatus (required)
   * ^binding.description = "Códigos requeridos por FHIR"
 
-* class 
+* class 0..1
 * class ^short = "Clasificación del encuentro con el paciente"
 * class ^definition = "Clasificación del encuentro con el paciente"
 * class from EncounterClass (extensible)

@@ -28,7 +28,7 @@ Description:        "Perfil CORE de Organizaciones (Organization)"
 * insert RuleSetStatus (0, draft, pc)
 
 
-// Definir la regla de slicing
+// Definir la regla de slicing para el elemento identifier
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open

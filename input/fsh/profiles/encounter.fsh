@@ -35,7 +35,7 @@ Description: "Perfil CORE de Encuentro Clínico (Encounter)"
 * class ^definition = "Clasificación del encuentro con el paciente"
 * class from EncounterClass (extensible)
 
-* type 
+* type 0..1
   * ^short = "Tipo específico de Encuentro"
   * ^definition = "Específica el tipo de encuentro" 
 // TODO: Se requiere un ValueSet para type

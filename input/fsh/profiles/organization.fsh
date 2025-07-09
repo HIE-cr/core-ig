@@ -27,7 +27,6 @@ Description:        "Perfil CORE de Organizaciones (Organization)"
 * insert ProfileMeta
 * insert RuleSetStatus (0, draft, pc)
 
-
 // Definir la regla de slicing para el elemento identifier
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
@@ -136,3 +135,4 @@ Description:        "Perfil CORE de Organizaciones (Organization)"
 * partOf 0..1
 * partOf ^short = "Organización de la que forma parte."
 * partOf ^definition = "Organización de la que forma parte."
+* partOf only Reference(OrganizationCrCore)

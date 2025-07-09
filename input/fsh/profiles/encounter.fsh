@@ -40,7 +40,7 @@ Description: "Perfil CORE de Encuentro Clínico (Encounter)"
   * ^definition = "Específica el tipo de encuentro" 
 // TODO: Se requiere un ValueSet para type
 
-* serviceType 
+* serviceType 0..1
   * ^short = "Tipo de servicio que se realiza en el Encuentro"
   * ^definition = "Categorización del servicio que se va a prestar en el encuentro (por ejemplo, servicio de Ginecología)"
 // TODO: Se requiere un ValueSet para serviceType

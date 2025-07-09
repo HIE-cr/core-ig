@@ -79,7 +79,7 @@ Description: "Perfil CORE de Encuentro Clínico (Encounter)"
   * ^definition = "Diagnóstico relevante para este encuentro"
 * diagnosis.condition ^short = "El diagnóstico o procedimiento relevante para el encuentro"
 * diagnosis.condition only CodeableReference(ConditionCrCore)
-* diagnosis.use 
+* diagnosis.use 0..1
   * ^short = "Papel que este diagnóstico tiene dentro del encuentro (p.ej. ingreso, facturación, alta…)"
   * ^definition = "Papel que este diagnóstico tiene dentro del encuentro (p.ej. ingreso, facturación, alta…)"
   * ^binding.valueSet = "http://hl7.org/fhir/ValueSet/diagnosis-role"

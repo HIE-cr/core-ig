@@ -43,6 +43,7 @@ Description:        "Perfil CORE de Paciente (Patient)"
 * identifier.use ^short = "usual | official | temp | secondary | old (If known)"
 * identifier.use ^definition = "De contar el Paciente con una Cédula de Identidad Nacional, se sugiere el uso de esta como identificador"
 
+// TODO: Revisar si se require más de un tipo de identificador
 * identifier.type ^short = "Tipo de documento de identificación (Extensible)"
 * identifier.type ^definition = "Se define como tipo de documento de identificación, aquel definido en el sistema de codificación V2-0203 de Hl7. Este sistema es extensible. Para pacientes sin documento local deben especificar el de origen."
 * identifier.type from PersonIdentifierType (required)

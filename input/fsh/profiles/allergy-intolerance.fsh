@@ -43,7 +43,7 @@ Description:    "Perfil CORE de Alergias e Intolerancias (AllergyIntolerance)"
   * ^definition = "Gravedad de la reacción."
 
 * code 1.. MS
-* code from ConditionProblemDiagnosisCodes (preferred)
+* code from ConditionProblemDiagnosisCodes (required)
   * ^short = "Código SNOMED-CT de la alergia o intolerancia."
   * ^definition = "Código SNOMED-CT de la alergia o intolerancia."
 

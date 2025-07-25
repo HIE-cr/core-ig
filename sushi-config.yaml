@@ -17,7 +17,7 @@ extension:
     valueInteger: 0
 
 status: draft
-version: 0.1.0-draft
+version: 0.1.1-draft
 fhirVersion: 5.0.0
 copyrightYear: 2025+
 date: 2025-03-03
@@ -28,7 +28,7 @@ releaseLabel: ci-build
 #releaseLabel: trial-use
 #releaseLabel: release
 license: CC-BY-4.0
-jurisdiction: urn:iso:std:iso:3166#CR "Costa Rica"
+jurisdiction: urn:iso:std:iso:3166#CR
 
 publisher:
   name: Ministerio de Salud de Costa Rica
@@ -104,9 +104,11 @@ pages:
 # For parameters defined by the FHIR Tools IG see:
 # http://build.fhir.org/ig/FHIR/fhir-tools-ig/branches/master/CodeSystem-ig-parameters.html
 #
+
 parameters:
   excludettl: true
   excludexml: true
+  show-inherited-invariants: false
   # validation: [allow-any-extensions, no-broken-links]
 #
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮

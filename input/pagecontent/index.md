@@ -43,11 +43,6 @@ Es un sistema que responde a la solicitud de acceso a datos, proporcionando dato
 ### Interacciones RESTful del CR Core FHIR
 Para los sistemas que admiten la estructura de contenido del Perfil Core de Costa Rica y las interacciones RESTful definidas para un recurso, los requisitos se definen formalmente en las Declaraciones de Capacidad del CR Core. Además, cada página de perfil incluye una sección de inicio rápido que documenta las operaciones de búsqueda y lectura RESTful de FHIR requeridas. Estas secciones muestran cómo acceder a los datos clínicos y administrativos de un paciente:
 
-**Ejemplo de una transacción de búsqueda RESTful FHIR simple**
-
-{:.sample-restful-transaction}
-![alt text](assets/images/cr-core-restful-fhir.png "Ejemplo de una transacción de búsqueda RESTful FHIR simple")
-
 Consulte la especificación FHIR para obtener detalles sobre [la API de búsqueda RESTful de FHIR](https://hl7.org/fhir/R5/http.html#search) y el [lanzamiento de aplicaciones SMART](https://hl7.org/fhir/smart-app-launch/STU2/) para saber cómo una aplicación obtiene acceso a un registro de paciente.
 
 ### Autores y Colaboradores

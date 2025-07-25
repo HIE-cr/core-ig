@@ -4,7 +4,7 @@ Title:          "ZipCode del distrito"
 Description:    "Extensión para el código del distrito basado en el ZipCode de Costa Rica"
 Context:        Address.district
 
-* ^experimental = true
+* ^experimental = false
 
 * value[x] only CodeableConcept
 * value[x] ^short = "Código del distrito basado en el ZipCode de Costa Rica"

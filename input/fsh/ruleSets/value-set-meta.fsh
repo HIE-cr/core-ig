@@ -22,7 +22,7 @@ RuleSet:            ValueSetMeta
 
 * ^version = "1.0.0"
 * ^status = #draft
-* ^experimental = true
+* ^experimental = false
 * ^purpose = "Metadata de la definición de la estructura"
 * ^publisher = "Ministerio de Salud de Costa Rica"
 * ^date = "2025-03-03"

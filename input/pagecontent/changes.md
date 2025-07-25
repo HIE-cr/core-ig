@@ -4,7 +4,7 @@
 - Basada en versión FHIR: 5.0.0
 
 #### Cambios
-- Se extableció experimental de los artefactos a `false`
+- Se estableció experimental de los artefactos a `false`
 - Se remplazaron lo ValueSet experimentales por estables
   - `SubstanceProductAndConditionAndNegationCodes` por `ConditionProblemDiagnosisCodes`
 

@@ -30,17 +30,17 @@ Description: "Perfil CORE de Encuentro Clínico (Encounter)"
 * status from EncounterStatus (required)
   * ^binding.description = "Códigos requeridos por FHIR"
 
-* class 
+* class 0..1
 * class ^short = "Clasificación del encuentro con el paciente"
 * class ^definition = "Clasificación del encuentro con el paciente"
 * class from EncounterClass (extensible)
 
-* type 
+* type 0..1
   * ^short = "Tipo específico de Encuentro"
   * ^definition = "Específica el tipo de encuentro" 
 // TODO: Se requiere un ValueSet para type
 
-* serviceType 
+* serviceType 0..1
   * ^short = "Tipo de servicio que se realiza en el Encuentro"
   * ^definition = "Categorización del servicio que se va a prestar en el encuentro (por ejemplo, servicio de Ginecología)"
 // TODO: Se requiere un ValueSet para serviceType
@@ -79,7 +79,7 @@ Description: "Perfil CORE de Encuentro Clínico (Encounter)"
   * ^definition = "Diagnóstico relevante para este encuentro"
 * diagnosis.condition ^short = "El diagnóstico o procedimiento relevante para el encuentro"
 * diagnosis.condition only CodeableReference(ConditionCrCore)
-* diagnosis.use 
+* diagnosis.use 0..1
   * ^short = "Papel que este diagnóstico tiene dentro del encuentro (p.ej. ingreso, facturación, alta…)"
   * ^definition = "Papel que este diagnóstico tiene dentro del encuentro (p.ej. ingreso, facturación, alta…)"
   * ^binding.valueSet = "http://hl7.org/fhir/ValueSet/diagnosis-role"

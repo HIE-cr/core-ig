@@ -5,7 +5,7 @@
 
 #### Cambios
 - Se estableció experimental de los artefactos a `false`
-- Se remplazaron lo ValueSet experimentales por estables
+- Se reemplazaron los ValueSets experimentales por estables
   - `SubstanceProductAndConditionAndNegationCodes` por `ConditionProblemDiagnosisCodes`
 
 ### Version 0.1.0-draft 

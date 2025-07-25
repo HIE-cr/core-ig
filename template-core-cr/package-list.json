@@ -13,6 +13,15 @@
             "current" : true
         },
         {
+            "version" : "0.1.1-draft",
+            "date" : "2025-07-10",
+            "desc" : "Versión en desarrollo",
+            "path" : "https://ministeriodesalud.go.cr/fhir/core/0.1.1-draft",
+            "fhirversion" : "5.0.0",
+            "status" : "draft",
+            "sequence" : "CR Core R1"
+        },
+        {
             "version" : "0.1.0-draft",
             "date" : "2025-03-07",
             "desc" : "Versión en desarrollo",
@@ -20,6 +29,6 @@
             "fhirversion" : "5.0.0",
             "status" : "draft",
             "sequence" : "CR Core R1"
-          }
+        }
     ]
 }

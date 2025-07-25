@@ -1,3 +1,13 @@
+### Version 0.1.1-draft 
+- Fecha de publicación: 2025-07-10
+- url: <https://build.fhir.org/ig/HIE-cr/core-ig>
+- Basada en versión FHIR: 5.0.0
+
+#### Cambios
+- Se extableció experimental de los artefactos a `false`
+- Se remplazaron lo ValueSet experimentales por estables
+  - `SubstanceProductAndConditionAndNegationCodes` por `ConditionProblemDiagnosisCodes`
+
 ### Version 0.1.0-draft 
 - Fecha de publicación: 2025-04-17
 - url: <https://build.fhir.org/ig/HIE-cr/core-ig>

@@ -4,7 +4,7 @@ Title:          "ZipCode del cantón"
 Description:    "Extensión para el código del cantón basado en el ZipCode de Costa Rica"
 Context:        Address.city
 
-* ^experimental = true
+* ^experimental = false
 
 * value[x] only CodeableConcept
 * value[x] ^short = "Código del cantón basado en el ZipCode de Costa Rica"

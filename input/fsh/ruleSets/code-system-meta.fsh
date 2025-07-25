@@ -22,7 +22,7 @@ RuleSet:            CodeSystemMeta
 
 * ^version = "1.0.0"
 * ^status = #draft
-* ^experimental = true
+* ^experimental = false
 * ^caseSensitive = false
 * ^compositional = false
 * ^versionNeeded = true

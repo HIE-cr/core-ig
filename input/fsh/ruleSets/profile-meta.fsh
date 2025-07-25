@@ -22,7 +22,7 @@ RuleSet:            ProfileMeta
 
 * ^version = "1.0.0"
 * ^status = #draft
-* ^experimental = true
+* ^experimental = false
 * ^publisher = "Ministerio de Salud de Costa Rica"
 * ^date = "2025-03-03"
 

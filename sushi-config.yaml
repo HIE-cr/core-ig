@@ -83,14 +83,14 @@ pages:
     title: Inicio
   security.md:
     title: Seguridad
-  digital-signature.md:
-    title: Firma Digital
+#  digital-signature.md:
+#    title: Firma Digital
   terminology.md:
     title: Terminologias
-  download.md:
-    title: Descargas
-  changes.md:
-    title: Cambios
+ # download.md:
+ #   title: Descargas
+ # changes.md:
+ #   title: Cambios
   credits.md:
     title: Créditos
 #

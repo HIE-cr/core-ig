@@ -25,11 +25,8 @@ En este contexto, surge la necesidad de desarrollar la Guía de Implementación 
 Esta guía está dividida en varias páginas, que se enumeran en la parte superior de cada página en la barra de menú.
 
 - [Inicio](index.html): la página de inicio proporciona la introducción y los antecedentes de CR Core.
-- [Artefactos FHIR](artifacts.html): estas páginas proporcionan descripciones detalladas y definiciones formales para todos los objetos FHIR definidos en esta guía
 - [Seguridad](security.html): esta página documenta los requisitos generales de seguridad y recomendaciones para los actores.
 - [Terminologías](terminology.html): esta opción documenta el uso de las diferentes terminologías en la guía de implementación.
-- [Descargas](download.html): esta página proporciona enlaces a los artefactos de CR Core.
-- [Registro de cambios](changes.html): esta página proporciona un registro de cambios para la guía de implementación de CR Core.
 
 ### Actores principales de Costa Rica
 Los siguientes actores forman parte del IG central de Costa Rica:

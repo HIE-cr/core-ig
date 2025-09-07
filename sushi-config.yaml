@@ -83,16 +83,16 @@ pages:
     title: Inicio
   security.md:
     title: Seguridad
-  digital-signature.md:
-    title: Firma Digital
+  #digital-signature.md:
+  #  title: Firma Digital
   terminology.md:
     title: Terminologias
-  download.md:
-    title: Descargas
-  changes.md:
-    title: Cambios
-  credits.md:
-    title: Créditos
+  #download.md:
+  #  title: Descargas
+  #changes.md:
+  #  title: Cambios
+  #credits.md:
+  #  title: Créditos
 #
 #
 # The parameters property represents IG.definition.parameter. Rather
@@ -122,12 +122,12 @@ parameters:
 menu:
   Inicio: index.html
   Seguridad: security.html
-  Firma Digital: digital-signature.html
-  Artefactos: artifacts.html
+  #  Firma Digital: digital-signature.html
+  #  Artefactos: artifacts.html
   Terminologias: terminology.html
-  Descargas: download.html
-  Cambios: changes.html
-  Créditos: credits.html
+#  Descargas: download.html
+#  Cambios: changes.html
+#  Créditos: credits.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
